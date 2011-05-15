@@ -3,11 +3,6 @@ class UsersController extends AppController {
 
 	var $name = 'Users';
 
-  function beforeFilter() {
-    parent::beforeFilter(); 
-    $this->Auth->allow(array('*'));
-  }
-
 	function index() {
 		$this->User->recursive = 0;
 		$this->set('users', $this->paginate());
@@ -62,15 +57,9 @@ class UsersController extends AppController {
 		}
 		$this->Session->setFlash(__('User was not deleted', true));
 		$this->redirect(array('action' => 'index'));
-  }
+	}
 
   function login() {
-    //Auth Magic
   }
-
-  function logout() {
-    //Leave empty for now.
-  }
-
 }
 ?>
