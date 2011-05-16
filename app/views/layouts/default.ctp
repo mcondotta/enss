@@ -14,12 +14,18 @@
 	?>
 </head>
 <body>
-	<div class="container_16">
-		<div class="grid_16">
-      <img src='img/logo.png' height=30% width=30%>
-		</div>
-		<div class="clear"></div>
-		<div class="grid_16">
+  <div class="container_16">
+    <div class="grid_12">
+      <?php echo $this->Html->image('logo.png', array('alt' => 'Excitoxicity and Neuroprotection Spring School 2011')); ?>
+    </div>
+    <div class="grid_4" id="capes">
+      <?php echo $this->Html->image('capes.png', array('alt' => 'CAPES')); ?>
+    </div>
+    <div class="grid_16">
+      </br>Porto Alegre, RS, Brazil, 2nd-8th  of October 2011
+    </div>
+    <div class="clear"></div>
+    <div class="grid_16" id="menubar">
       <ul id="nav">
         <li><a>Home</a></li>
         <li><a>Information</a>
@@ -33,13 +39,18 @@
         <li><a>Sponsors</a></li>
         <li><a>Contact</a></li>
       </ul>
-		</div>
-		
+      <div id="lang">
+        <?php __("Language selector") ?></br>
+        <?php echo $this->Html->image('en.gif', array('alt' => 'Change language to English')); ?>
+        <?php echo $this->Html->image('brazil.gif', array('alt' => 'Mudar linguagem para Portugues')); ?>
+      </div>
+			</div>
+	
 		<div class="clear" style="height: 10px; width: 100%;"></div>
 		
-	<div class="grid_16"><?php echo $this->Session->flash(); ?></div>
+  	<div class="grid_16"><?php echo $this->Session->flash(); ?></div>
 
-	<div class="grid_16"><?php echo $content_for_layout; ?></div>
+  	<div class="grid_16"><?php echo $content_for_layout; ?></div>
 		
 		<div class="clear"></div>
 	</div>

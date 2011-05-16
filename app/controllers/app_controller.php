@@ -6,7 +6,8 @@ class AppController extends Controller {
     function beforeFilter() {
         //Configure AuthComponent
         Security::setHash('sha256');
-        $this->Auth->authorize = array('index', 'actions');
+        $this->Auth->allow('*');
+        #$this->Auth->authorize = array('index', 'actions');
         $this->Auth->authError = 'Area Restrita! Efetue login!';
         $this->Auth->loginError = 'Nome de usuario ou senha não conferem!';
         $this->Auth->userScope = array('User.active' => true);
@@ -14,6 +15,12 @@ class AppController extends Controller {
         #$this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'logout');
         #$this->Auth->loginRedirect = array('controller' => 'posts', 'action' => 'add');
         $this->set('admin', $this->_isAdmin());
+        $this->loadModel('Page');
+        $this->loadModel('Subpage');
+        $pages = $this->Page->find('all');
+        $subpages = $this->Subpage->find('all');
+        debug($pages);
+        debug($subpages);
     }
 
     function afterFilter() {
