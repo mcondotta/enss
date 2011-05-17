@@ -1,7 +1,7 @@
 /*------------------------------------*\
 	NAV
 \*------------------------------------*/
-#nav{
+#main-menu{
 	float:left;
   position:middle;
 	width:90%;
@@ -11,13 +11,13 @@
 	margin-bottom:3px;
   background:#488E48;
 }
-#nav li{
+#main-menu li{
 	float:left;
 	margin-right:10px;
 	position:relative;
 	display:block;
 }
-#nav li a{
+#main-menu li a{
 	display:block;
 	padding:5px;
 	color:#FFFF66;
@@ -29,7 +29,7 @@
 	-webkit-border-radius:2px;
 	border-radius:2px;
 }
-#nav li a:hover{
+#main-menu li a:hover{
 	color:#fff;
 	background:#000099; /* Solid colour fall-back */
 	background:rgba(72,142,72,0.75); /* It'll look nice semi-transparent */
@@ -39,36 +39,36 @@
 }
 
 /*--- DROPDOWN ---*/
-#nav ul{
+#main-menu ul{
 	list-style:none;
 	position:absolute;
 	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
 	opacity:0; /* Set initial state to transparent */
 	-webkit-transition:0.25s linear opacity; /* Make the dropdown fade-in in Webkit */
 }
-#nav ul li{
+#main-menu ul li{
 	padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
 
 	float:none;
 }
-#nav ul a{
+#main-menu ul a{
 	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
 	display:block;
 }
-#nav li:hover ul{ /* Display the dropdown on hover */
+#main-menu li:hover ul{ /* Display the dropdown on hover */
 	left:0; /* Bring back on-screen when needed */
 	opacity:1; /* Fade to opaque */
 }
-#nav li:hover a{ /* Set styles for top level when dropdown is hovered */
+#main-menu li:hover a{ /* Set styles for top level when dropdown is hovered */
 
 	background:#000099; /* Solid colour fall-back */
 	background:rgba(0,0,154,0.75); /* It'll look nice semi-transparent */
 }
-#nav li:hover ul a{ /* Override some top level styles when dropdown is hovered */
+#main-menu li:hover ul a{ /* Override some top level styles when dropdown is hovered */
 	text-decoration:none;
 	-webkit-transition:-webkit-transform 0.075s linear;
 }
-#nav li:hover ul li a:hover{ /* Set styles for dropdown when items are hovered */
+#main-menu li:hover ul li a:hover{ /* Set styles for dropdown when items are hovered */
 	background:#000099; /* Solid colour fall-back */
 
 	background:rgba(72,142,72,0.75); /* It'll look nice semi-transparent */

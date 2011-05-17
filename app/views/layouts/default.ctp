@@ -26,19 +26,9 @@
     </div>
     <div class="clear"></div>
     <div class="grid_16" id="menubar">
-      <ul id="nav">
-        <li><a>Home</a></li>
-        <li><a>Information</a>
-          <ul>
-            <li><a>City</a></li>
-          </ul>
-        </li>
-        <li><a>Speakers</a></li>
-        <li><a>Scientific Program</a></li>
-        <li><a>Abstract/Registration</a></li>
-        <li><a>Sponsors</a></li>
-        <li><a>Contact</a></li>
-      </ul>
+<?php 
+    echo $menuBuilder->build('main-menu'); 
+?>
       <div id="lang">
         <?php __("Language selector") ?></br>
         <?php echo $this->Html->image('en.gif', array('alt' => 'Change language to English')); ?>
@@ -53,7 +43,8 @@
   	<div class="grid_16"><?php echo $content_for_layout; ?></div>
 		
 		<div class="clear"></div>
+		<div class="clear" style="height: 300px; width: 100%;"></div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	<?php #echo $this->element('sql_dump'); ?>
 </body>
 </html>
