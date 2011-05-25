@@ -1,5 +1,5 @@
 <?php
-/* Subpages Test cases generated on: 2011-05-16 13:52:04 : 1305564724*/
+/* Subpages Test cases generated on: 2011-05-25 10:42:28 : 1306330948*/
 App::import('Controller', 'Subpages');
 
 class TestSubpagesController extends SubpagesController {
@@ -11,7 +11,7 @@ class TestSubpagesController extends SubpagesController {
 }
 
 class SubpagesControllerTestCase extends CakeTestCase {
-	var $fixtures = array('app.subpage', 'app.page', 'app.event', 'app.abstract', 'app.section', 'app.content');
+	var $fixtures = array('app.subpage', 'app.page', 'app.event', 'app.abstract');
 
 	function startTest() {
 		$this->Subpages =& new TestSubpagesController();

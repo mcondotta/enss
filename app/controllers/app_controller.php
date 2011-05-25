@@ -1,6 +1,6 @@
 <?php
 class AppController extends Controller {
-    var $components = array('Auth', 'Session');
+    var $components = array('Auth', 'Session', 'Cookie');
     var $helpers = array('Html', 'Form', 'Session', 'MenuBuilder.MenuBuilder');
 
     function beforeFilter() {
@@ -16,23 +16,22 @@ class AppController extends Controller {
         #$this->Auth->loginRedirect = array('controller' => 'posts', 'action' => 'add');
         $this->set('admin', $this->_isAdmin());
         $this->loadModel('Page');
-        $this->loadModel('Subpage');
         $pages = $this->Page->find('all');
-        $subpages = $this->Subpage->find('all');
+        debug($pages);
         $menu = array('main-menu' => array());
         $submenu = array();
         foreach ($pages as $page) {
-          $menu_entry = array('title' => $page['Page']['name']);
+          $menu_entry = array('title' => __($page['Page']['name'], true));
           if (!empty($page['Page']['location'])) {
             $url_string = explode('/', $page['Page']['location']);
             $url = array('controller' => $url_string[0], 'action' => $url_string[1]);
           }
           else {
-            $action = strtolower(implode('_', explode(' ', $page['Page']['name'])));
+            $action = strtolower(implode('_', preg_split("/( |\/)/", $page['Page']['name'])));
             $url = array('controller' => 'pages', 'action' => $action);
           }
           $menu_entry['url'] = $url;
-          #debug($page['Page']);
+          debug($page['Page']);
           if (!empty($page['Subpage'])) {
             $menu_entry['submenu'] = array();
             foreach ($page['Subpage'] as $subpage) {
@@ -53,7 +52,13 @@ class AppController extends Controller {
           array_push($menu['main-menu'], $menu_entry);
         }
         #debug($menu);
+        // $menu = array('main-menu' => array(
+        //                                    array('title' => __('Home', true), 'url' => 'pages/display'),
+        //                                    array('title' => __('Information', true), 'url' => 'pages/information'),
+        //                                   )
+        //              );
         $this->set(compact('menu'));
+        $this->_setLanguage();
     }
 
     function afterFilter() {
@@ -72,5 +77,16 @@ class AppController extends Controller {
       }
       return $admin;
     }
+
+  function _setLanguage() {
+    if ($this->Cookie->read('lang') && !$this->Session->check('Config.language')) {
+      $this->Session->write('Config.language', $this->Cookie->read('lang'));
+    }
+    else if (isset($this->params['language']) && ($this->params['language']
+             !=  $this->Session->read('Config.language'))) {
+      $this->Session->write('Config.language', $this->params['language']);
+      $this->Cookie->write('lang', $this->params['language'], false, '20 days');
+    }
+  }
 }
 ?>

@@ -15,12 +15,6 @@
 				<li><?php echo $this->Html->link(sprintf(__('New %s', true), __('Event', true)), array('controller' => 'events', 'action' => 'add')); ?> </li>
 			</ul>
 
-			<h5>Sections</h5>
-			<ul class="menu">
-				<li><?php echo $this->Html->link(sprintf(__('List %s', true), __('Sections', true)), array('controller' => 'sections', 'action' => 'index')); ?> </li>
-				<li><?php echo $this->Html->link(sprintf(__('New %s', true), __('Section', true)), array('controller' => 'sections', 'action' => 'add')); ?> </li>
-			</ul>
-
 			<h5>Subpages</h5>
 			<ul class="menu">
 				<li><?php echo $this->Html->link(sprintf(__('List %s', true), __('Subpages', true)), array('controller' => 'subpages', 'action' => 'index')); ?> </li>
@@ -39,7 +33,7 @@
 	 		<legend><?php printf(__('Page Record', true)); ?></legend>
 		<?php
 		echo $this->Form->input('name');
-		echo $this->Form->input('event_id', array('type' => 'select'));
+		echo $this->Form->input('event_id');
 		echo $this->Form->input('location');
 	?>
 		</fieldset>

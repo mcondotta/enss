@@ -92,4 +92,14 @@ class DATABASE_CONFIG {
 		'database' => 'enss_test',
 		'prefix' => '',
 	);
+
+  var $production = array(
+		'driver' => 'mysql',
+		'persistent' => false,
+		'host' => 'bdlivre.ufrgs.br',
+		'login' => 'enss',
+		'password' => 'wjjF8oa1FjFI',
+		'database' => 'enss',
+		'prefix' => '',
+  );
 }

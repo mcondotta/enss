@@ -1,6 +1,7 @@
 <?php
 class Page extends AppModel {
 	var $name = 'Page';
+  var $actsAs = array('Translate' => array('name'));
 	var $validate = array(
 		'name' => array(
 			'notempty' => array(
@@ -36,19 +37,6 @@ class Page extends AppModel {
 	);
 
 	var $hasMany = array(
-		'Section' => array(
-			'className' => 'Section',
-			'foreignKey' => 'page_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		),
 		'Subpage' => array(
 			'className' => 'Subpage',
 			'foreignKey' => 'page_id',

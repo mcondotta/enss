@@ -1,5 +1,5 @@
 <?php
-/* Event Test cases generated on: 2011-05-16 11:07:13 : 1305554833*/
+/* Event Test cases generated on: 2011-05-25 10:21:34 : 1306329694*/
 App::import('Model', 'Event');
 
 class EventTestCase extends CakeTestCase {

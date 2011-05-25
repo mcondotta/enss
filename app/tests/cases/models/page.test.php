@@ -1,9 +1,9 @@
 <?php
-/* Page Test cases generated on: 2011-05-16 11:07:22 : 1305554842*/
+/* Page Test cases generated on: 2011-05-25 10:44:33 : 1306331073*/
 App::import('Model', 'Page');
 
 class PageTestCase extends CakeTestCase {
-	var $fixtures = array('app.page', 'app.event', 'app.abstract', 'app.section');
+	var $fixtures = array('app.page', 'app.event', 'app.abstract', 'app.subpage');
 
 	function startTest() {
 		$this->Page =& ClassRegistry::init('Page');

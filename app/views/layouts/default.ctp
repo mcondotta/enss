@@ -19,29 +19,35 @@
       <?php echo $this->Html->image('logo.png', array('alt' => 'Excitoxicity and Neuroprotection Spring School 2011')); ?>
     </div>
     <div class="grid_4" id="capes">
-      <?php echo $this->Html->image('capes.png', array('alt' => 'CAPES')); ?>
+      <?php echo $this->Html->image('capes1.png', array('alt' => 'CAPES')); ?>
     </div>
     <div class="grid_16">
-      </br>Porto Alegre, RS, Brazil, 2nd-8th  of October 2011
+      </br><h4 style="float: right;"><?php __("Porto Alegre, RS, Brazil, 2nd-8th of October 2011"); ?></h4>
     </div>
     <div class="clear"></div>
     <div class="grid_16" id="menubar">
-<?php 
-    echo $menuBuilder->build('main-menu'); 
-?>
+      <?php echo $menuBuilder->build('main-menu'); ?>
       <div id="lang">
         <?php __("Language selector") ?></br>
-        <?php echo $this->Html->image('en.gif', array('alt' => 'Change language to English')); ?>
-        <?php echo $this->Html->image('brazil.gif', array('alt' => 'Mudar linguagem para Portugues')); ?>
+        <?php echo $this->Html->image('en.gif', array('alt' => 'Change language to English', 'url' => array('language'=>'eng'))); ?>
+        <?php echo $this->Html->image('brazil.gif', array('alt' => 'Mudar linguagem para Portugues', 'url' => array('language'=>'por'))); ?>
       </div>
-			</div>
-	
+    </div>
+    <div class="grid_16" id="city">
+      <div class="city_pics"><?php echo $this->Html->image('city_pic1n.png', array('alt' => 'Change language to English')); ?></div>
+      <div class="city_pics"><?php echo $this->Html->image('city_pic2n.png', array('alt' => 'Change language to English')); ?></div>
+      <div class="city_pics"><?php echo $this->Html->image('city_pic3n.png', array('alt' => 'Change language to English')); ?></div>
+      <div class="city_pics"><?php echo $this->Html->image('city_pic4n.png', array('alt' => 'Change language to English')); ?></div>
+      <div class="city_pics"><?php echo $this->Html->image('city_pic5n.png', array('alt' => 'Change language to English')); ?></div>
+      <div class="city_pics"><?php echo $this->Html->image('city_pic6n.png', array('alt' => 'Change language to English')); ?></div>
+    </div>
+
 		<div class="clear" style="height: 10px; width: 100%;"></div>
-		
+
   	<div class="grid_16"><?php echo $this->Session->flash(); ?></div>
 
-  	<div class="grid_16"><?php echo $content_for_layout; ?></div>
-		
+  	<?php echo $content_for_layout; ?>
+
 		<div class="clear"></div>
 		<div class="clear" style="height: 300px; width: 100%;"></div>
 	</div>

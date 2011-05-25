@@ -34,22 +34,5 @@ class Subpage extends AppModel {
 			'order' => ''
 		)
 	);
-
-	var $hasMany = array(
-		'Section' => array(
-			'className' => 'Section',
-			'foreignKey' => 'subpage_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		)
-	);
-
 }
 ?>

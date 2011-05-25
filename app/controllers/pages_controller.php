@@ -26,7 +26,7 @@ class PagesController extends AppController {
 				$this->Session->setFlash(__('The page could not be saved. Please, try again.', true));
 			}
 		}
-		$events = $this->Page->Event->find('list', array('fields' => 'Event.year'));
+		$events = $this->Page->Event->find('list');
 		$this->set(compact('events'));
 	}
 
@@ -63,8 +63,7 @@ class PagesController extends AppController {
 		$this->redirect(array('action' => 'index'));
 	}
 
-  function display($id = null) {
+  function display() {
   }
-
 }
 ?>

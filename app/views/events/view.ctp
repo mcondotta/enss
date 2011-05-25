@@ -109,6 +109,7 @@
 								<th><?php __('Id'); ?></th>
 		<th><?php __('Name'); ?></th>
 		<th><?php __('Event Id'); ?></th>
+		<th><?php __('Location'); ?></th>
 						<th class="actions"><?php __('Actions');?></th>
 					</tr>
 				</thead>
@@ -124,6 +125,7 @@
 			<td><?php echo $page['id'];?></td>
 			<td><?php echo $page['name'];?></td>
 			<td><?php echo $page['event_id'];?></td>
+			<td><?php echo $page['location'];?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View', true), array('controller' => 'pages', 'action' => 'view', $page['id'])); ?>
 				<?php echo ' | '. $this->Html->link(__('Edit', true), array('controller' => 'pages', 'action' => 'edit', $page['id'])); ?>

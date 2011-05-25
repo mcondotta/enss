@@ -1,5 +1,5 @@
 <?php
-/* Pages Test cases generated on: 2011-05-16 13:39:12 : 1305563952*/
+/* Pages Test cases generated on: 2011-05-25 10:44:33 : 1306331073*/
 App::import('Controller', 'Pages');
 
 class TestPagesController extends PagesController {
@@ -11,7 +11,7 @@ class TestPagesController extends PagesController {
 }
 
 class PagesControllerTestCase extends CakeTestCase {
-	var $fixtures = array('app.page', 'app.event', 'app.abstract', 'app.section', 'app.subpages', 'app.content', 'app.subpage');
+	var $fixtures = array('app.page', 'app.event', 'app.abstract', 'app.subpage');
 
 	function startTest() {
 		$this->Pages =& new TestPagesController();
