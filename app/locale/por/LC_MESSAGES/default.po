@@ -1,0 +1,567 @@
+# LANGUAGE translation of CakePHP Application
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2011-05-25 17:26-0300\n"
+"PO-Revision-Date: 2011-05-25 17:27-0300\n"
+"Last-Translator: Marcelo Condotta <celoband@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+
+#: \controllers\events_controller.php:13;33
+msgid "Invalid event"
+msgstr ""
+
+#: \controllers\events_controller.php:23;38
+msgid "The event has been saved"
+msgstr ""
+
+#: \controllers\events_controller.php:26;41
+msgid "The event could not be saved. Please, try again."
+msgstr ""
+
+#: \controllers\events_controller.php:51
+msgid "Invalid id for event"
+msgstr ""
+
+#: \controllers\events_controller.php:55
+msgid "Event deleted"
+msgstr ""
+
+#: \controllers\events_controller.php:58
+msgid "Event was not deleted"
+msgstr ""
+
+#: \controllers\pages_controller.php:13;35
+msgid "Invalid page"
+msgstr ""
+
+#: \controllers\pages_controller.php:23;40
+msgid "The page has been saved"
+msgstr ""
+
+#: \controllers\pages_controller.php:26;43
+msgid "The page could not be saved. Please, try again."
+msgstr ""
+
+#: \controllers\pages_controller.php:55
+msgid "Invalid id for page"
+msgstr ""
+
+#: \controllers\pages_controller.php:59
+msgid "Page deleted"
+msgstr ""
+
+#: \controllers\pages_controller.php:62
+msgid "Page was not deleted"
+msgstr ""
+
+#: \controllers\subpages_controller.php:13;35
+msgid "Invalid subpage"
+msgstr ""
+
+#: \controllers\subpages_controller.php:23;40
+msgid "The subpage has been saved"
+msgstr ""
+
+#: \controllers\subpages_controller.php:26;43
+msgid "The subpage could not be saved. Please, try again."
+msgstr ""
+
+#: \controllers\subpages_controller.php:55
+msgid "Invalid id for subpage"
+msgstr ""
+
+#: \controllers\subpages_controller.php:59
+msgid "Subpage deleted"
+msgstr ""
+
+#: \controllers\subpages_controller.php:62
+msgid "Subpage was not deleted"
+msgstr ""
+
+#: \controllers\users_controller.php:13;33
+msgid "Invalid user"
+msgstr ""
+
+#: \controllers\users_controller.php:23;38
+msgid "The user has been saved"
+msgstr ""
+
+#: \controllers\users_controller.php:26;41
+msgid "The user could not be saved. Please, try again."
+msgstr ""
+
+#: \controllers\users_controller.php:51
+msgid "Invalid id for user"
+msgstr ""
+
+#: \controllers\users_controller.php:55
+msgid "User deleted"
+msgstr ""
+
+#: \controllers\users_controller.php:58
+msgid "User was not deleted"
+msgstr ""
+
+#: \views\elements\admin\admin_left_menu.ctp:9;11
+msgid "Dashboard"
+msgstr ""
+
+#: \views\elements\admin\admin_left_menu.ctp:18;20
+msgid "User Management"
+msgstr ""
+
+#: \views\events\add.ctp:9;14;20
+#: \views\events\edit.ctp:10;15;21
+#: \views\events\index.ctp:14;20
+#: \views\events\view.ctp:11;17;23
+#: \views\pages\add.ctp:9;14;20
+#: \views\pages\edit.ctp:10;15;21
+#: \views\pages\index.ctp:14;20
+#: \views\pages\view.ctp:11;17;23
+#: \views\subpages\add.ctp:9;14
+#: \views\subpages\edit.ctp:10;15
+#: \views\subpages\index.ctp:14
+#: \views\subpages\view.ctp:11;17
+#: \views\users\add.ctp:9;14;20
+#: \views\users\edit.ctp:10;15;21
+#: \views\users\index.ctp:14;20
+#: \views\users\view.ctp:11;17;23
+msgid "List %s"
+msgstr ""
+
+#: \views\events\add.ctp:9
+#: \views\events\edit.ctp:10
+#: \views\events\index.ctp:28
+#: \views\events\view.ctp:11
+#: \views\pages\add.ctp:14
+#: \views\pages\edit.ctp:15
+#: \views\pages\index.ctp:14
+#: \views\pages\view.ctp:17
+msgid "Events"
+msgstr "Eventos"
+
+#: \views\events\add.ctp:14
+#: \views\events\edit.ctp:15
+#: \views\events\index.ctp:14
+#: \views\events\view.ctp:17;58
+#: \views\users\add.ctp:14
+#: \views\users\edit.ctp:15
+#: \views\users\index.ctp:14
+#: \views\users\view.ctp:17;98
+msgid "Abstracts"
+msgstr "Resumos"
+
+#: \views\events\add.ctp:15;21
+#: \views\events\edit.ctp:16;22
+#: \views\events\index.ctp:9;15;21
+#: \views\events\view.ctp:12;18;24;99;141
+#: \views\pages\add.ctp:15;21
+#: \views\pages\edit.ctp:16;22
+#: \views\pages\index.ctp:9;15;21
+#: \views\pages\view.ctp:12;18;24;105
+#: \views\subpages\add.ctp:15
+#: \views\subpages\edit.ctp:16
+#: \views\subpages\index.ctp:9;15
+#: \views\subpages\view.ctp:12;18
+#: \views\users\add.ctp:15;21
+#: \views\users\edit.ctp:16;22
+#: \views\users\index.ctp:9;15;21
+#: \views\users\view.ctp:12;18;24;139;191
+msgid "New %s"
+msgstr "Novo %s"
+
+#: \views\events\add.ctp:15
+#: \views\events\edit.ctp:16
+#: \views\events\index.ctp:15
+#: \views\events\view.ctp:18;99
+#: \views\users\add.ctp:15
+#: \views\users\edit.ctp:16
+#: \views\users\index.ctp:15
+#: \views\users\view.ctp:18;139
+msgid "Abstract"
+msgstr "Resumo"
+
+#: \views\events\add.ctp:20
+#: \views\events\edit.ctp:21
+#: \views\events\index.ctp:20
+#: \views\events\view.ctp:23;104
+#: \views\pages\add.ctp:9
+#: \views\pages\edit.ctp:10
+#: \views\pages\index.ctp:28
+#: \views\pages\view.ctp:11
+#: \views\subpages\add.ctp:14
+#: \views\subpages\edit.ctp:15
+#: \views\subpages\index.ctp:14
+#: \views\subpages\view.ctp:17
+msgid "Pages"
+msgstr "Paginas"
+
+#: \views\events\add.ctp:21
+#: \views\events\edit.ctp:22
+#: \views\events\index.ctp:21
+#: \views\events\view.ctp:24;141
+#: \views\pages\add.ctp:28
+#: \views\pages\edit.ctp:29
+#: \views\pages\index.ctp:9
+#: \views\pages\view.ctp:9;10;12;34
+#: \views\subpages\add.ctp:15
+#: \views\subpages\edit.ctp:16
+#: \views\subpages\index.ctp:15
+#: \views\subpages\view.ctp:18;46
+msgid "Page"
+msgstr "Pagina"
+
+#: \views\events\add.ctp:28
+#: \views\pages\add.ctp:28
+#: \views\subpages\add.ctp:22
+#: \views\users\add.ctp:28
+msgid "Add %s"
+msgstr "Adicionar %s"
+
+#: \views\events\add.ctp:28
+#: \views\events\edit.ctp:29
+#: \views\events\index.ctp:9
+#: \views\events\view.ctp:9;10;12;34
+#: \views\pages\add.ctp:15
+#: \views\pages\edit.ctp:16
+#: \views\pages\index.ctp:15
+#: \views\pages\view.ctp:18;47
+msgid "Event"
+msgstr "Evento"
+
+#: \views\events\add.ctp:33
+#: \views\events\edit.ctp:34
+msgid "Event Record"
+msgstr ""
+
+#: \views\events\add.ctp:38
+#: \views\events\edit.ctp:40
+#: \views\pages\add.ctp:40
+#: \views\pages\edit.ctp:42
+#: \views\subpages\add.ctp:34
+#: \views\subpages\edit.ctp:36
+#: \views\users\add.ctp:44
+#: \views\users\edit.ctp:46
+msgid "Submit"
+msgstr "OK"
+
+#: \views\events\edit.ctp:9
+#: \views\events\index.ctp:49
+#: \views\events\view.ctp:90;132
+#: \views\pages\edit.ctp:9
+#: \views\pages\index.ctp:53
+#: \views\pages\view.ctp:96
+#: \views\subpages\edit.ctp:9
+#: \views\subpages\index.ctp:47
+#: \views\users\edit.ctp:9
+#: \views\users\index.ctp:57
+#: \views\users\view.ctp:130;182
+msgid "Delete"
+msgstr "Remover"
+
+#: \views\events\edit.ctp:9
+#: \views\events\index.ctp:49
+#: \views\events\view.ctp:10;90;132
+#: \views\pages\edit.ctp:9
+#: \views\pages\index.ctp:53
+#: \views\pages\view.ctp:10;96
+#: \views\subpages\edit.ctp:9
+#: \views\subpages\index.ctp:47
+#: \views\subpages\view.ctp:10
+#: \views\users\edit.ctp:9
+#: \views\users\index.ctp:57
+#: \views\users\view.ctp:10;130;182
+msgid "Are you sure you want to delete # %s?"
+msgstr "Deseja mesmo remover # %s?"
+
+#: \views\events\edit.ctp:29
+#: \views\events\view.ctp:9
+#: \views\pages\edit.ctp:29
+#: \views\pages\view.ctp:9
+#: \views\subpages\edit.ctp:23
+#: \views\subpages\view.ctp:9
+#: \views\users\edit.ctp:29
+#: \views\users\view.ctp:9
+msgid "Edit %s"
+msgstr "Editar %s"
+
+#: \views\events\index.ctp:32
+#: \views\events\view.ctp:69;113
+#: \views\pages\index.ctp:32
+#: \views\pages\view.ctp:77
+#: \views\subpages\index.ctp:26
+#: \views\users\index.ctp:32
+#: \views\users\view.ctp:109;158
+msgid "Actions"
+msgstr "Ações"
+
+#: \views\events\index.ctp:47
+#: \views\events\view.ctp:88;130
+#: \views\pages\index.ctp:51
+#: \views\pages\view.ctp:94
+#: \views\subpages\index.ctp:45
+#: \views\users\index.ctp:55
+#: \views\users\view.ctp:128;180
+msgid "View"
+msgstr "Ver"
+
+#: \views\events\index.ctp:48
+#: \views\events\view.ctp:89;131
+#: \views\pages\index.ctp:52
+#: \views\pages\view.ctp:95
+#: \views\subpages\index.ctp:46
+#: \views\users\index.ctp:56
+#: \views\users\view.ctp:129;181
+msgid "Edit"
+msgstr "Editar"
+
+#: \views\events\index.ctp:59
+#: \views\pages\index.ctp:63
+#: \views\subpages\index.ctp:57
+#: \views\users\index.ctp:67
+msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
+msgstr "Pagina %page% de %pages%, mostrando %current% itens do total de %count%, iniciando no item %start% e finalizando no item %end%"
+
+#: \views\events\index.ctp:64
+#: \views\pages\index.ctp:68
+#: \views\subpages\index.ctp:62
+#: \views\users\index.ctp:72
+msgid "previous"
+msgstr "anterior"
+
+#: \views\events\index.ctp:67
+#: \views\pages\index.ctp:71
+#: \views\subpages\index.ctp:65
+#: \views\users\index.ctp:75
+msgid "next"
+msgstr "próximo"
+
+#: \views\events\view.ctp:10
+#: \views\pages\view.ctp:10
+#: \views\subpages\view.ctp:10
+#: \views\users\view.ctp:10
+msgid "Delete %s"
+msgstr "Deletar %s"
+
+#: \views\events\view.ctp:37;63;109
+#: \views\pages\view.ctp:37;73
+#: \views\subpages\view.ctp:31
+#: \views\users\view.ctp:37;103;149
+msgid "Id"
+msgstr ""
+
+#: \views\events\view.ctp:42
+msgid "Year"
+msgstr "Ano"
+
+#: \views\events\view.ctp:54
+#: \views\pages\view.ctp:64
+#: \views\users\view.ctp:94
+msgid "Related"
+msgstr "Relacionado"
+
+#: \views\events\view.ctp:58;104
+#: \views\pages\view.ctp:68
+#: \views\users\view.ctp:98;144
+msgid "Related %s"
+msgstr "Relacionado a %s"
+
+#: \views\events\view.ctp:64
+#: \views\users\view.ctp:104
+msgid "File"
+msgstr "Arquivo"
+
+#: \views\events\view.ctp:65;112
+#: \views\pages\view.ctp:52;75
+#: \views\subpages\view.ctp:41
+#: \views\users\view.ctp:105
+msgid "Location"
+msgstr "URL"
+
+#: \views\events\view.ctp:66
+#: \views\users\view.ctp:106
+msgid "Aproved"
+msgstr "Approvado"
+
+#: \views\events\view.ctp:67;111
+#: \views\users\view.ctp:107
+msgid "Event Id"
+msgstr "ID do Evento"
+
+#: \views\events\view.ctp:68
+#: \views\users\view.ctp:108;157
+msgid "User Id"
+msgstr "ID do Usuário"
+
+#: \views\events\view.ctp:110
+#: \views\pages\view.ctp:42;74
+#: \views\subpages\view.ctp:36
+msgid "Name"
+msgstr "Nome"
+
+#: \views\layouts\admin.ctp:6
+msgid "Administration"
+msgstr "Administração"
+
+#: \views\layouts\default.ctp:25
+msgid "Porto Alegre, RS, Brazil, 2nd-8th  of October 2011"
+msgstr "Porto Alegre, RS, Brazil, 2 a 8  de Outubro de 2011"
+
+#: \views\layouts\default.ctp:31
+msgid "Language selector"
+msgstr "Seletor de linguagem"
+
+#: \views\pages\add.ctp:20
+#: \views\pages\edit.ctp:21
+#: \views\pages\index.ctp:20
+#: \views\pages\view.ctp:23;68
+#: \views\subpages\add.ctp:9
+#: \views\subpages\edit.ctp:10
+#: \views\subpages\index.ctp:22
+#: \views\subpages\view.ctp:11
+msgid "Subpages"
+msgstr "Subpáginas"
+
+#: \views\pages\add.ctp:21
+#: \views\pages\edit.ctp:22
+#: \views\pages\index.ctp:21
+#: \views\pages\view.ctp:24;105
+#: \views\subpages\add.ctp:22
+#: \views\subpages\edit.ctp:23
+#: \views\subpages\index.ctp:9
+#: \views\subpages\view.ctp:9;10;12;28
+msgid "Subpage"
+msgstr "Subpágina"
+
+#: \views\pages\add.ctp:33
+#: \views\pages\edit.ctp:34
+msgid "Page Record"
+msgstr ""
+
+#: \views\pages\display.ctp:4
+msgid "Welcome to ENSS"
+msgstr "Bem vindo ao ENSS"
+
+#: \views\pages\display.ctp:5
+msgid ""
+"Dear Students,\n"
+"  On the south of Brazil, it is a great pleasure to announce the 1th Excitotocity and Neurprotection Spring School (ENSS), which will take place in Porto Alegre in October 2011. The ENSS has the intention to improve the science between researchers and postgraduate students in neuroscience."
+msgstr ""
+
+#: \views\pages\view.ctp:76
+msgid "Page Id"
+msgstr ""
+
+#: \views\subpages\add.ctp:27
+#: \views\subpages\edit.ctp:28
+msgid "Subpage Record"
+msgstr ""
+
+#: \views\users\add.ctp:9
+#: \views\users\edit.ctp:10
+#: \views\users\index.ctp:28
+#: \views\users\view.ctp:11
+msgid "Users"
+msgstr ""
+
+#: \views\users\add.ctp:20
+#: \views\users\edit.ctp:21
+#: \views\users\index.ctp:20
+#: \views\users\view.ctp:23;144
+msgid "Personal Informations"
+msgstr ""
+
+#: \views\users\add.ctp:21
+#: \views\users\edit.ctp:22
+#: \views\users\index.ctp:21
+#: \views\users\view.ctp:24;191
+msgid "Personal Information"
+msgstr ""
+
+#: \views\users\add.ctp:28
+#: \views\users\edit.ctp:29
+#: \views\users\index.ctp:9
+#: \views\users\view.ctp:9;10;12;34
+msgid "User"
+msgstr ""
+
+#: \views\users\add.ctp:33
+#: \views\users\edit.ctp:34
+msgid "User Record"
+msgstr ""
+
+#: \views\users\view.ctp:42
+msgid "Password"
+msgstr ""
+
+#: \views\users\view.ctp:47
+msgid "Role"
+msgstr ""
+
+#: \views\users\view.ctp:52
+msgid "Email"
+msgstr ""
+
+#: \views\users\view.ctp:57
+msgid "Status"
+msgstr ""
+
+#: \views\users\view.ctp:62
+msgid "Clear Password"
+msgstr ""
+
+#: \views\users\view.ctp:67
+msgid "Last Login"
+msgstr ""
+
+#: \views\users\view.ctp:72
+msgid "Last Access"
+msgstr ""
+
+#: \views\users\view.ctp:77
+msgid "Created"
+msgstr ""
+
+#: \views\users\view.ctp:82
+msgid "Modified"
+msgstr ""
+
+#: \views\users\view.ctp:150
+msgid "First Name"
+msgstr ""
+
+#: \views\users\view.ctp:151
+msgid "Last Name"
+msgstr ""
+
+#: \views\users\view.ctp:152
+msgid "CPF"
+msgstr ""
+
+#: \views\users\view.ctp:153
+msgid "Country"
+msgstr ""
+
+#: \views\users\view.ctp:154
+msgid "University"
+msgstr ""
+
+#: \views\users\view.ctp:155
+msgid "Course"
+msgstr ""
+
+#: \views\users\view.ctp:156
+msgid "Birth"
+msgstr ""
+
+#: \webroot\test.php:88
+msgid "Debug setting does not allow access to this url."
+msgstr ""
+

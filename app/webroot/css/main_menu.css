@@ -1,0 +1,121 @@
+ul#main-menu,ul#main-menu ul{
+	margin:0;
+  list-style:none;
+  padding:0;
+}
+
+ul#main-menu ul{
+	display:none;
+  position:absolute;
+  left:0;
+  top:100%;
+  padding:0 10px 10px;
+  background-color:#000062;
+  border-radius:6px;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+}
+
+ul#main-menu li:hover>*{
+	display:block;
+}
+
+ul#main-menu li:hover{
+	position:relative;
+}
+
+ul#main-menu ul ul{
+	position:absolute;
+  left:100%;
+  top:0;
+}
+
+ul#main-menu{
+	display:block;
+  font-size:0;
+  float:left;
+}
+
+ul#main-menu li{
+	display:block;
+  white-space:nowrap;
+  font-size:0;
+  float:left;
+}
+
+ul#main-menu>li,ul#main-menu li{
+	margin:0;
+}
+
+ul#main-menu a:active, ul#main-menu a:focus{
+	outline-style:none;
+}
+
+ul#main-menu a,ul#main-menu a.pressed{
+	display:block;
+  vertical-align:middle;
+  text-align:center;
+  text-decoration:none;
+  font:bold 14px Trebuchet MS;
+  color:#ffff00;
+  text-shadow:#FFF 0 0 1px;
+  cursor:pointer;
+}
+
+ul#main-menu ul li{
+	float:none;
+  margin:10px 0 0;
+}
+
+ul#main-menu ul a{
+	text-align:left;
+  padding:4px;
+  background-color:#000062;
+  background-image:none;
+  border-width:0;
+  border-radius:0px;
+  -moz-border-radius:0px;
+  -webkit-border-radius:0px;
+  font:bold 14px Tahoma;
+  color:#ffff00;
+  text-decoration:none;
+}
+
+ul#main-menu li:hover>a{
+	background-color:#009100;
+  border-color:#C0C0C0;
+  border-style:solid;
+  font:bold 14px Trebuchet MS;
+  color:#ffff00;
+  text-decoration:none;
+  text-shadow:#FFF 0 0 1px;
+}
+
+ul#main-menu a{
+	padding:10px;
+  background-color:#000062;
+  border-width:0 0 0 1px;
+  border-style:solid;
+  border-color:#000062;
+  color:#ffff00;
+  text-decoration:none;
+  text-shadow:#FFF 0 0 1px;
+}
+
+ul#main-menu li:hover>a,ul#main-menu li>a.pressed{
+	background-color:#009100;
+  border-style:solid;
+  border-color:#C0C0C0;
+  color:#ffff00;
+  text-decoration:none;
+  text-shadow:#FFF 0 0 1px;
+}
+
+ul#main-menu ul li:hover>a,ul#main-menu ul li>a.pressed{
+	background-color:#009100;
+  background-image:none;
+  font:bold 14px Tahoma;
+  color:#ffff00;
+  text-decoration:none;
+}
+
