@@ -73,7 +73,7 @@
  */
 class DATABASE_CONFIG {
 
-	var $default = array(
+	var $development = array(
 		'driver' => 'mysql',
 		'persistent' => false,
 		'host' => 'localhost',
@@ -93,7 +93,7 @@ class DATABASE_CONFIG {
 		'prefix' => '',
 	);
 
-  var $production = array(
+  var $default = array(
 		'driver' => 'mysql',
 		'persistent' => false,
 		'host' => 'bdlivre.ufrgs.br',

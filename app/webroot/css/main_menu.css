@@ -10,7 +10,7 @@ ul#main-menu ul{
   left:0;
   top:100%;
   padding:0 10px 10px;
-  background-color:#000062;
+  background-color:#488E48;
   border-radius:6px;
   -moz-border-radius:6px;
   -webkit-border-radius:6px;
@@ -70,7 +70,7 @@ ul#main-menu ul li{
 ul#main-menu ul a{
 	text-align:left;
   padding:4px;
-  background-color:#000062;
+  background-color:#488E48;
   background-image:none;
   border-width:0;
   border-radius:0px;
@@ -82,8 +82,8 @@ ul#main-menu ul a{
 }
 
 ul#main-menu li:hover>a{
-	background-color:#009100;
-  border-color:#C0C0C0;
+	background-color:#000062;
+  border-color:#000062;
   border-style:solid;
   font:bold 14px Trebuchet MS;
   color:#ffff00;
@@ -93,8 +93,17 @@ ul#main-menu li:hover>a{
 
 ul#main-menu a{
 	padding:10px;
-  background-color:#000062;
+  background-color:#488E48;
   border-width:0 0 0 1px;
+  border-style:solid;
+  border-color:#488E48;
+  color:#ffff00;
+  text-decoration:none;
+  text-shadow:#FFF 0 0 1px;
+}
+
+ul#main-menu li:hover>a,ul#main-menu li>a.pressed{
+	background-color:#000062;
   border-style:solid;
   border-color:#000062;
   color:#ffff00;
@@ -102,17 +111,8 @@ ul#main-menu a{
   text-shadow:#FFF 0 0 1px;
 }
 
-ul#main-menu li:hover>a,ul#main-menu li>a.pressed{
-	background-color:#009100;
-  border-style:solid;
-  border-color:#C0C0C0;
-  color:#ffff00;
-  text-decoration:none;
-  text-shadow:#FFF 0 0 1px;
-}
-
 ul#main-menu ul li:hover>a,ul#main-menu ul li>a.pressed{
-	background-color:#009100;
+	background-color:#000062;
   background-image:none;
   font:bold 14px Tahoma;
   color:#ffff00;

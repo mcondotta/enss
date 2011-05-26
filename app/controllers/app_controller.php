@@ -1,4 +1,5 @@
 <?php
+App::import('Sanitize');
 class AppController extends Controller {
     var $components = array('Auth', 'Session', 'Cookie');
     var $helpers = array('Html', 'Form', 'Session', 'MenuBuilder.MenuBuilder');
@@ -17,9 +18,13 @@ class AppController extends Controller {
         $this->set('admin', $this->_isAdmin());
         $this->_setLanguage();
         $this->loadModel('Page');
+        $this->loadModel('Subpage');
         $this->Page->locale = $this->Session->read('Config.language');
+        $this->Subpage->locale = $this->Session->read('Config.language');
         $pages = $this->Page->find('all');
+        $subpages = $this->Subpage->find('all');
         #debug($pages);
+        #debug($subpages);
         $menu = array('main-menu' => array());
         $submenu = array();
         foreach ($pages as $page) {
@@ -29,7 +34,7 @@ class AppController extends Controller {
             $url = array('controller' => $url_string[0], 'action' => $url_string[1]);
           }
           else {
-            $action = strtolower(implode('_', preg_split("/( |\/)/", $page['Page']['name'])));
+            $action = strtolower(implode('_', preg_split("/( |\/)/", Sanitize::paranoid($page['Page']['name']))));
             $url = array('controller' => 'pages', 'action' => $action);
           }
           $menu_entry['url'] = $url;
@@ -37,13 +42,16 @@ class AppController extends Controller {
           if (!empty($page['Subpage'])) {
             $menu_entry['submenu'] = array();
             foreach ($page['Subpage'] as $subpage) {
+              $loc_subpage = $this->Subpage->find('all', array ('conditions' => array('Subpage.id' => $subpage['id'])));
+              $subpage = $loc_subpage[0]['Subpage'];
+              #debug($loc_subpage);
               $submenu = array('title' => $subpage['name']);
               if (!empty($subpage['location'])) {
                 $url_string = explode('/', $subpage['location']);
                 $url = array('controller' => $url_string[0], 'action' => $url_string[1]);
               }
               else {
-                $action = strtolower(implode('_', explode(' ', $subpage['name'])));
+                $action = strtolower(implode('_', preg_split("/( |\/)/", Sanitize::paranoid($subpage['name']))));
                 $url = array('controller' => 'pages', 'action' => $action);
               }
               $submenu['url'] = $url;

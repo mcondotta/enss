@@ -9,15 +9,15 @@
 <p id="welc_text">
 <ul>
   <li><div id="spk_list"><?php echo $this->Html->image('spa.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;Francisco Ciruela</div></li>
-  <li><?php echo $this->Html->image('deu.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;Helmut Kettenmann</li> 
-  <li><?php echo $this->Html->image('usa.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;James W. Simpkins</li>
-  <li><?php echo $this->Html->image('usa.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;Jeffrey Rothstein</li>
-  <li><?php echo $this->Html->image('usa.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;Michael Robinson</li>
-  <li><?php echo $this->Html->image('usa.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;Nicolas G. Bazan</li>
-  <li><?php echo $this->Html->image('por.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;Rafael Guti&eacute;rrez Aguilar</li>
-  <li><?php echo $this->Html->image('ita.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;Renata Ciccarelli</li>
-  <li><?php echo $this->Html->image('bra.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;Ros&aacute;lia Mendez-Otero</li>
-  <li><?php echo $this->Html->image('usa.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;Vladimir Parpura</li>
+  <li><div id="spk_list"><?php echo $this->Html->image('deu.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;Helmut Kettenmann</div></li> 
+  <li><div id="spk_list"><?php echo $this->Html->image('usa.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;James W. Simpkins</div></li>
+  <li><div id="spk_list"><?php echo $this->Html->image('usa.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;Jeffrey Rothstein</div></li>
+  <li><div id="spk_list"><?php echo $this->Html->image('usa.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;Michael Robinson</div></li>
+  <li><div id="spk_list"><?php echo $this->Html->image('usa.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;Nicolas G. Bazan</div></li>
+  <li><div id="spk_list"><?php echo $this->Html->image('por.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;Rafael Guti&eacute;rrez Aguilar</div></li>
+  <li><div id="spk_list"><?php echo $this->Html->image('ita.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;Renata Ciccarelli</div></li>
+  <li><div id="spk_list"><?php echo $this->Html->image('bra.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;Ros&aacute;lia Mendez-Otero</div></li>
+  <li><div id="spk_list"><?php echo $this->Html->image('usa.png', array('alt' => __('Spain', true))); ?>&nbsp;&nbsp;Vladimir Parpura</div></li>
 </ul></p>
 <p id="welc_text"><?php __('Very best regards,'); ?></br>
 <?php __('ENSS Organizers'); ?></p>
