@@ -3,6 +3,11 @@ class PagesController extends AppController {
 
 	var $name = 'Pages';
 
+  function beforeFilter() {
+    parent::beforeFilter();
+    $this->Page->locale = $this->Session->read('Config.language');
+  }
+
 	function index() {
 		$this->Page->recursive = 0;
 		$this->set('pages', $this->paginate());
@@ -63,7 +68,7 @@ class PagesController extends AppController {
 		$this->redirect(array('action' => 'index'));
 	}
 
-  function display() {
+  function home() {
   }
 }
 ?>

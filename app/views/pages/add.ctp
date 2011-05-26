@@ -26,7 +26,7 @@
 
 <div class="grid_12">
     <h2 id="page-heading"><?php printf(__('Add %s', true), __('Page', true)); ?></h2>
-    
+
 	<div class="pages form">
 	<?php echo $this->Form->create('Page');?>
 		<fieldset>
@@ -40,5 +40,19 @@
 	<?php echo $this->Form->end(__('Submit', true));?>
 	</div>
 
+  <h2 id="page-heading"><?php printf(__('Add %s', true), __('Page', true)); ?></h2>
+
+	<div class="pages form">
+	<?php echo $this->Form->create('Page');?>
+		<fieldset>
+	 		<legend><?php printf(__('Page Record', true)); ?></legend>
+		<?php
+		echo $this->Form->input('name');
+		echo $this->Form->input('event_id');
+		echo $this->Form->input('location');
+	?>
+		</fieldset>
+	<?php echo $this->Form->end(__('Submit', true));?>
+	</div>
 </div>
 <div class="clear"></div>

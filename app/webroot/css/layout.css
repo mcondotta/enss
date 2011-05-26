@@ -69,6 +69,14 @@ h2#page-heading {
 
 /* boxes
 ----------------------------------------------- */
+.blue_box {
+	border:1px solid #bbb;
+	padding:10px;
+	position:relative;
+	background:#8be2f9;
+	margin-bottom:10px;
+  text-align: center;
+}
 .box {
 	background:#ddd;
 	margin-bottom:20px;

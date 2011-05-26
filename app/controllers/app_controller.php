@@ -15,13 +15,15 @@ class AppController extends Controller {
         #$this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'logout');
         #$this->Auth->loginRedirect = array('controller' => 'posts', 'action' => 'add');
         $this->set('admin', $this->_isAdmin());
+        $this->_setLanguage();
         $this->loadModel('Page');
+        $this->Page->locale = $this->Session->read('Config.language');
         $pages = $this->Page->find('all');
-        debug($pages);
+        #debug($pages);
         $menu = array('main-menu' => array());
         $submenu = array();
         foreach ($pages as $page) {
-          $menu_entry = array('title' => __($page['Page']['name'], true));
+          $menu_entry = array('title' => $page['Page']['name']);
           if (!empty($page['Page']['location'])) {
             $url_string = explode('/', $page['Page']['location']);
             $url = array('controller' => $url_string[0], 'action' => $url_string[1]);
@@ -31,7 +33,7 @@ class AppController extends Controller {
             $url = array('controller' => 'pages', 'action' => $action);
           }
           $menu_entry['url'] = $url;
-          debug($page['Page']);
+          #debug($page['Page']);
           if (!empty($page['Subpage'])) {
             $menu_entry['submenu'] = array();
             foreach ($page['Subpage'] as $subpage) {
@@ -58,7 +60,6 @@ class AppController extends Controller {
         //                                   )
         //              );
         $this->set(compact('menu'));
-        $this->_setLanguage();
     }
 
     function afterFilter() {

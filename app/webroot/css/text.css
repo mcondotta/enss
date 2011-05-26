@@ -32,7 +32,7 @@ hr
 
 h1
 {
-	font-size: 25px;
+	font-size: 30px;
 }
 
 h2
@@ -95,4 +95,15 @@ address,
 fieldset
 {
 	margin-bottom: 20px;
+}
+
+#welc_text {
+  font-size: 15px;
+  vertical-align: center;
+  text-align: justify;
+}
+
+#spk_list {
+  font-size: 15px;
+  vertical-align: center;
 }

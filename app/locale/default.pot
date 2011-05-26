@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2011-05-25 17:26-0300\n"
+"POT-Creation-Date: 2011-05-26 00:52-0300\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -38,27 +38,27 @@ msgstr ""
 msgid "Event was not deleted"
 msgstr ""
 
-#: \controllers\pages_controller.php:13;35
+#: \controllers\pages_controller.php:18;40
 msgid "Invalid page"
 msgstr ""
 
-#: \controllers\pages_controller.php:23;40
+#: \controllers\pages_controller.php:28;45
 msgid "The page has been saved"
 msgstr ""
 
-#: \controllers\pages_controller.php:26;43
+#: \controllers\pages_controller.php:31;48
 msgid "The page could not be saved. Please, try again."
 msgstr ""
 
-#: \controllers\pages_controller.php:55
+#: \controllers\pages_controller.php:60
 msgid "Invalid id for page"
 msgstr ""
 
-#: \controllers\pages_controller.php:59
+#: \controllers\pages_controller.php:64
 msgid "Page deleted"
 msgstr ""
 
-#: \controllers\pages_controller.php:62
+#: \controllers\pages_controller.php:67
 msgid "Page was not deleted"
 msgstr ""
 
@@ -87,6 +87,7 @@ msgid "Subpage was not deleted"
 msgstr ""
 
 #: \controllers\users_controller.php:13;33
+#: \controllers\users_controller_1.php:48
 msgid "Invalid user"
 msgstr ""
 
@@ -108,6 +109,18 @@ msgstr ""
 
 #: \controllers\users_controller.php:58
 msgid "User was not deleted"
+msgstr ""
+
+#: \controllers\users_controller_1.php:40
+msgid "User successfully registered!"
+msgstr ""
+
+#: \controllers\users_controller_1.php:78
+msgid "Invalid User ID"
+msgstr ""
+
+#: \controllers\users_controller_1.php:111
+msgid "You are now logged out"
 msgstr ""
 
 #: \views\elements\admin\admin_left_menu.ctp:9;11
@@ -208,7 +221,7 @@ msgstr ""
 #: \views\events\edit.ctp:22
 #: \views\events\index.ctp:21
 #: \views\events\view.ctp:24;141
-#: \views\pages\add.ctp:28
+#: \views\pages\add.ctp:28;43
 #: \views\pages\edit.ctp:29
 #: \views\pages\index.ctp:9
 #: \views\pages\view.ctp:9;10;12;34
@@ -220,7 +233,7 @@ msgid "Page"
 msgstr ""
 
 #: \views\events\add.ctp:28
-#: \views\pages\add.ctp:28
+#: \views\pages\add.ctp:28;43
 #: \views\subpages\add.ctp:22
 #: \views\users\add.ctp:28
 msgid "Add %s"
@@ -244,7 +257,7 @@ msgstr ""
 
 #: \views\events\add.ctp:38
 #: \views\events\edit.ctp:40
-#: \views\pages\add.ctp:40
+#: \views\pages\add.ctp:40;55
 #: \views\pages\edit.ctp:42
 #: \views\subpages\add.ctp:34
 #: \views\subpages\edit.ctp:36
@@ -412,7 +425,7 @@ msgid "Administration"
 msgstr ""
 
 #: \views\layouts\default.ctp:25
-msgid "Porto Alegre, RS, Brazil, 2nd-8th  of October 2011"
+msgid "Porto Alegre, RS, Brazil, 2nd-8th of October 2011"
 msgstr ""
 
 #: \views\layouts\default.ctp:31
@@ -441,17 +454,57 @@ msgstr ""
 msgid "Subpage"
 msgstr ""
 
-#: \views\pages\add.ctp:33
+#: \views\pages\add.ctp:33;48
 #: \views\pages\edit.ctp:34
 msgid "Page Record"
 msgstr ""
 
-#: \views\pages\display.ctp:4
+#: \views\pages\home.ctp:4
 msgid "Welcome to ENSS"
 msgstr ""
 
-#: \views\pages\display.ctp:5
-msgid "Dear Students,\n  On the south of Brazil, it is a great pleasure to announce the 1th Excitotocity and Neurprotection Spring School (ENSS), which will take place in Porto Alegre in October 2011. The ENSS has the intention to improve the science between researchers and postgraduate students in neuroscience."
+#: \views\pages\home.ctp:5
+msgid "Dear Students,"
+msgstr ""
+
+#: \views\pages\home.ctp:6
+msgid "It is a great pleasure to announce that the first Excitotoxicity and Neuroprotection Spring School (ENSS) will be held in Porto Alegre, RS, Brazil, from October 2nd to 8th, 2011."
+msgstr ""
+
+#: \views\pages\home.ctp:7
+msgid "This school is an initiative of CAPES to promote international exchange, academic cooperation and innovative interaction among outstanding scientists, Brazilian graduate students and Postdoctoral fellows."
+msgstr ""
+
+#: \views\pages\home.ctp:8
+msgid "The scientific programme was designed to promote fruitful discussions among the participants focusing in Brain diseases and Neuroprotection. The following outstanding neuroscientists will participate in this event:"
+msgstr ""
+
+#: \views\pages\home.ctp:11;12;13;14;15;16;17;18;19;20
+msgid "Spain"
+msgstr ""
+
+#: \views\pages\home.ctp:22
+msgid "Very best regards,"
+msgstr ""
+
+#: \views\pages\home.ctp:23
+msgid "ENSS Organizers"
+msgstr ""
+
+#: \views\pages\home.ctp:33
+msgid "Login"
+msgstr ""
+
+#: \views\pages\home.ctp:36
+msgid "password"
+msgstr ""
+
+#: \views\pages\home.ctp:42
+msgid "Click here if you forgot your password."
+msgstr ""
+
+#: \views\pages\home.ctp:46
+msgid "Click here if you're not registered."
 msgstr ""
 
 #: \views\pages\view.ctp:76

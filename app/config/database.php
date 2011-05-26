@@ -78,8 +78,8 @@ class DATABASE_CONFIG {
 		'persistent' => false,
 		'host' => 'localhost',
 		'login' => 'enss',
-		'password' => 'enss2011',
-		'database' => 'enss_development',
+		'password' => 'wjjF8oa1FjFI',
+		'database' => 'enss',
 		'prefix' => '',
 	);
 

@@ -28,7 +28,7 @@
  */
   Router::connect('/:language/:controller/:action/*', array(), array('language' => '[a-z]{3}'));
 
-	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+	Router::connect('/', array('controller' => 'pages', 'action' => 'home'));
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */
