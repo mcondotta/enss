@@ -20,6 +20,8 @@
     </div>
     <div class="grid_4" id="capes">
       <?php echo $this->Html->image('capes1.png', array('alt' => 'CAPES')); ?>
+      <?php // echo $this->Html->image('cnpq1.png', array('alt' => 'CNPQ')); ?>
+      <?php echo $this->Html->image('fapergs1.png', array('alt' => 'FAPERGS')); ?>
     </div>
     <div class="grid_16">
       </br><h4 style="float: right;"><?php __("Porto Alegre, RS, Brazil, 2nd-8th of October 2011"); ?></h4>
@@ -48,7 +50,10 @@
 
   	<?php echo $content_for_layout; ?>
 
-		<div class="clear"></div>
+		<div class="grid_16" ></br></br></div>
+    <div class="grid_16" style="text-align: center;">
+      <?php echo $this->Html->image('lab_sul.png', array('alt' => 'Change language to English')); ?>
+    </div>
 		<div class="clear" style="height: 300px; width: 100%;"></div>
 	</div>
 	<?php #echo $this->element('sql_dump'); ?>
