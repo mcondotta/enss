@@ -62,5 +62,11 @@ class UsersController extends AppController {
   function login() {
   }
 
+  function forgot() {
+  }
+
+  function register() {
+  }
+
 }
 ?>

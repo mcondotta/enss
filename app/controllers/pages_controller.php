@@ -72,10 +72,83 @@ class PagesController extends AppController {
   }
 
   function home() {
+    $this->set('title_for_layout','ENSS');
+  }
+
+  function information() {
+    $this->set('title_for_layout',__('ENSS - Information', true));
   }
 
   function city() {
+    $this->set('title_for_layout',__('ENSS - City', true));
   }
 
+  function accomodation() {
+    $this->set('title_for_layout',__('ENSS - Accomodation', true));
+  }
+
+  function venue_meeting() {
+    $this->set('title_for_layout',__('ENSS - Venue Meeting', true));
+  }
+
+  function speakers() {
+    $this->set('title_for_layout',__('ENSS - Speakers', true));
+  }
+
+  function scientific_programme() {
+    $this->set('title_for_layout',__('ENSS - Scientific Programme', true));
+  }
+
+  function financial_support() {
+    $this->set('title_for_layout',__('ENSS - Financial Support', true));
+  }
+
+  function contacts() {
+    $this->set('title_for_layout',__('ENSS - Contacts', true));
+  }
+
+  function organizing_committee() {
+    $this->set('title_for_layout',__('ENSS - Organizing Committee', true));
+  }
+
+  function francisco_ciruela() {
+    $this->set('title_for_layout',__('ENSS - Francisco Ciruela', true));
+  }
+
+  function helmut_kettenmann() {
+    $this->set('title_for_layout',__('ENSS - Helmut Kettenmann', true));
+  }
+
+  function james_w_simpkins() {
+    $this->set('title_for_layout',__('ENSS - James W. Simpkins', true));
+  }
+
+  function jeffrey_rothstein() {
+    $this->set('title_for_layout',__('ENSS - Jeffrey Rothstein', true));
+  }
+
+  function michael_robinson() {
+    $this->set('title_for_layout',__('ENSS - Michael Robinson', true));
+  }
+
+  function nicolas_g_bazan() {
+    $this->set('title_for_layout',__('ENSS - Nicolas G. Bazan', true));
+  }
+
+  function rafael_gutierrez_aguilar() {
+    $this->set('title_for_layout',__('ENSS - Rafael Guti&#233;rrez Aguilar', true));
+  }
+
+  function renata_ciccarelli() {
+    $this->set('title_for_layout',__('ENSS - Renata Ciccarelli', true));
+  }
+
+  function rosalia_mentez_otero() {
+    $this->set('title_for_layout',__('ENSS - Ros&#225;lia Mendez-Otero', true));
+  }
+
+  function vladimir_parpura() {
+    $this->set('title_for_layout',__('ENSS - Vladimir Parpura', true));
+  }
 }
 ?>

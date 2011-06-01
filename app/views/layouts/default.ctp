@@ -36,12 +36,12 @@
       </div>
     </div>
     <div class="grid_16" id="city">
-      <div class="city_pics"><?php echo $this->Html->image('city_pic1n.png', array('alt' => 'Change language to English')); ?></div>
-      <div class="city_pics"><?php echo $this->Html->image('city_pic2n.png', array('alt' => 'Change language to English')); ?></div>
-      <div class="city_pics"><?php echo $this->Html->image('city_pic3n.png', array('alt' => 'Change language to English')); ?></div>
-      <div class="city_pics"><?php echo $this->Html->image('city_pic4n.png', array('alt' => 'Change language to English')); ?></div>
-      <div class="city_pics"><?php echo $this->Html->image('city_pic5n.png', array('alt' => 'Change language to English')); ?></div>
-      <div class="city_pics"><?php echo $this->Html->image('city_pic6n.png', array('alt' => 'Change language to English')); ?></div>
+      <div class="city_pics"><?php echo $this->Html->image('city_pic1.png', array('alt' => 'Change language to English')); ?></div>
+      <div class="city_pics"><?php echo $this->Html->image('city_pic2.png', array('alt' => 'Change language to English')); ?></div>
+      <div class="city_pics"><?php echo $this->Html->image('city_pic3.png', array('alt' => 'Change language to English')); ?></div>
+      <div class="city_pics"><?php echo $this->Html->image('city_pic4.png', array('alt' => 'Change language to English')); ?></div>
+      <div class="city_pics"><?php echo $this->Html->image('city_pic5.png', array('alt' => 'Change language to English')); ?></div>
+      <div class="city_pics"><?php echo $this->Html->image('city_pic6.png', array('alt' => 'Change language to English')); ?></div>
     </div>
 
 		<div class="clear" style="height: 10px; width: 100%;"></div>
@@ -53,6 +53,7 @@
 		<div class="grid_16" ></br></br></div>
     <div class="grid_16" style="text-align: center;">
       <?php echo $this->Html->image('lab_sul.png', array('alt' => 'Change language to English')); ?>
+      <?php echo $this->Html->image('reboh.png', array('alt' => 'Change language to English')); ?>
     </div>
 		<div class="clear" style="height: 300px; width: 100%;"></div>
 	</div>

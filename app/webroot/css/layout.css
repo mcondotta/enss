@@ -73,10 +73,17 @@ h2#page-heading {
 	border:1px solid #bbb;
 	padding:10px;
 	position:relative;
-	background:#8be2f9;
+	background:#2c539e;
 	margin-bottom:10px;
   text-align: center;
 }
+.blue_box a {
+  color: #fff;
+}
+.blue_box a:hover {
+	color:#ffff00;
+}
+
 .box {
 	background:#ddd;
 	margin-bottom:20px;
@@ -701,6 +708,7 @@ table.ui-datepicker-calendar {
 #capes {
   vertical-align:middle;
 	margin: 10px 0px 0px 0px;
+  text-align:center;
 }
 
 #city {
@@ -724,4 +732,9 @@ background: linear-gradient(top, #488e48 0%,#3d774e 46%,#2c539e 100%); /* W3C */
 
 #sponsors {
   text-align: center;
+}
+
+#schedule {
+  overflow:hidden;
+  overflow-y: hidden;
 }

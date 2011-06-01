@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2011-05-26 00:52-0300\n"
+"POT-Creation-Date: 2011-06-01 18:20-0300\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -38,51 +38,127 @@ msgstr ""
 msgid "Event was not deleted"
 msgstr ""
 
-#: \controllers\pages_controller.php:18;40
+#: \controllers\pages_controller.php:18;43
 msgid "Invalid page"
 msgstr ""
 
-#: \controllers\pages_controller.php:28;45
+#: \controllers\pages_controller.php:31;48
 msgid "The page has been saved"
 msgstr ""
 
-#: \controllers\pages_controller.php:31;48
+#: \controllers\pages_controller.php:34;51
 msgid "The page could not be saved. Please, try again."
 msgstr ""
 
-#: \controllers\pages_controller.php:60
+#: \controllers\pages_controller.php:63
 msgid "Invalid id for page"
 msgstr ""
 
-#: \controllers\pages_controller.php:64
+#: \controllers\pages_controller.php:67
 msgid "Page deleted"
 msgstr ""
 
-#: \controllers\pages_controller.php:67
+#: \controllers\pages_controller.php:70
 msgid "Page was not deleted"
 msgstr ""
 
-#: \controllers\subpages_controller.php:13;35
+#: \controllers\pages_controller.php:79
+msgid "ENSS - Information"
+msgstr ""
+
+#: \controllers\pages_controller.php:83
+msgid "ENSS - City"
+msgstr ""
+
+#: \controllers\pages_controller.php:87
+msgid "ENSS - Accomodation"
+msgstr ""
+
+#: \controllers\pages_controller.php:91
+msgid "ENSS - Venue Meeting"
+msgstr ""
+
+#: \controllers\pages_controller.php:95
+msgid "ENSS - Speakers"
+msgstr ""
+
+#: \controllers\pages_controller.php:99
+msgid "ENSS - Scientific Programme"
+msgstr ""
+
+#: \controllers\pages_controller.php:103
+msgid "ENSS - Financial Support"
+msgstr ""
+
+#: \controllers\pages_controller.php:107
+msgid "ENSS - Contacts"
+msgstr ""
+
+#: \controllers\pages_controller.php:111
+msgid "ENSS - Organizing Committee"
+msgstr ""
+
+#: \controllers\pages_controller.php:115
+msgid "ENSS - Francisco Ciruela"
+msgstr ""
+
+#: \controllers\pages_controller.php:119
+msgid "ENSS - Helmut Kettenmann"
+msgstr ""
+
+#: \controllers\pages_controller.php:123
+msgid "ENSS - James W. Simpkins"
+msgstr ""
+
+#: \controllers\pages_controller.php:127
+msgid "ENSS - Jeffrey Rothstein"
+msgstr ""
+
+#: \controllers\pages_controller.php:131
+msgid "ENSS - Michael Robinson"
+msgstr ""
+
+#: \controllers\pages_controller.php:135
+msgid "ENSS - Nicolas G. Bazan"
+msgstr ""
+
+#: \controllers\pages_controller.php:139
+msgid "ENSS - Rafael Guti&#233;rrez Aguilar"
+msgstr ""
+
+#: \controllers\pages_controller.php:143
+msgid "ENSS - Renata Ciccarelli"
+msgstr ""
+
+#: \controllers\pages_controller.php:147
+msgid "ENSS - Ros&#225;lia Mendez-Otero"
+msgstr ""
+
+#: \controllers\pages_controller.php:151
+msgid "ENSS - Vladimir Parpura"
+msgstr ""
+
+#: \controllers\subpages_controller.php:18;44
 msgid "Invalid subpage"
 msgstr ""
 
-#: \controllers\subpages_controller.php:23;40
+#: \controllers\subpages_controller.php:32;49
 msgid "The subpage has been saved"
 msgstr ""
 
-#: \controllers\subpages_controller.php:26;43
+#: \controllers\subpages_controller.php:35;52
 msgid "The subpage could not be saved. Please, try again."
 msgstr ""
 
-#: \controllers\subpages_controller.php:55
+#: \controllers\subpages_controller.php:64
 msgid "Invalid id for subpage"
 msgstr ""
 
-#: \controllers\subpages_controller.php:59
+#: \controllers\subpages_controller.php:68
 msgid "Subpage deleted"
 msgstr ""
 
-#: \controllers\subpages_controller.php:62
+#: \controllers\subpages_controller.php:71
 msgid "Subpage was not deleted"
 msgstr ""
 
@@ -221,7 +297,7 @@ msgstr ""
 #: \views\events\edit.ctp:22
 #: \views\events\index.ctp:21
 #: \views\events\view.ctp:24;141
-#: \views\pages\add.ctp:28;43
+#: \views\pages\add.ctp:28
 #: \views\pages\edit.ctp:29
 #: \views\pages\index.ctp:9
 #: \views\pages\view.ctp:9;10;12;34
@@ -233,7 +309,7 @@ msgid "Page"
 msgstr ""
 
 #: \views\events\add.ctp:28
-#: \views\pages\add.ctp:28;43
+#: \views\pages\add.ctp:28
 #: \views\subpages\add.ctp:22
 #: \views\users\add.ctp:28
 msgid "Add %s"
@@ -257,9 +333,9 @@ msgstr ""
 
 #: \views\events\add.ctp:38
 #: \views\events\edit.ctp:40
-#: \views\pages\add.ctp:40;55
+#: \views\pages\add.ctp:47
 #: \views\pages\edit.ctp:42
-#: \views\subpages\add.ctp:34
+#: \views\subpages\add.ctp:41
 #: \views\subpages\edit.ctp:36
 #: \views\users\add.ctp:44
 #: \views\users\edit.ctp:46
@@ -424,12 +500,29 @@ msgstr ""
 msgid "Administration"
 msgstr ""
 
-#: \views\layouts\default.ctp:25
+#: \views\layouts\default.ctp:27
 msgid "Porto Alegre, RS, Brazil, 2nd-8th of October 2011"
 msgstr ""
 
-#: \views\layouts\default.ctp:31
+#: \views\layouts\default.ctp:33
 msgid "Language selector"
+msgstr ""
+
+#: \views\pages\accomodation.ctp:3
+#: \views\pages\contacts.ctp:3
+#: \views\pages\francisco_ciruela.ctp:3
+#: \views\pages\helmut_kettenmann.ctp:3
+#: \views\pages\james_w_simpkins.ctp:3
+#: \views\pages\jeffrey_rothstein.ctp:3
+#: \views\pages\michael_robinson.ctp:3
+#: \views\pages\nicolas_g_bazan.ctp:3
+#: \views\pages\organizing_committee.ctp:3
+#: \views\pages\rafael_gutierrez_aguilar.ctp:3
+#: \views\pages\renata_ciccarelli.ctp:3
+#: \views\pages\rosalia_mentez_otero.ctp:3
+#: \views\pages\venue_meeting.ctp:3
+#: \views\pages\vladimir_parpura.ctp:3
+msgid "Comming soon."
 msgstr ""
 
 #: \views\pages\add.ctp:20
@@ -454,9 +547,44 @@ msgstr ""
 msgid "Subpage"
 msgstr ""
 
-#: \views\pages\add.ctp:33;48
+#: \views\pages\add.ctp:33
+msgid "English Page"
+msgstr ""
+
+#: \views\pages\add.ctp:41
+msgid "Portuguese Page"
+msgstr ""
+
+#: \views\pages\city.ctp:5
+msgid "Porto Alegre, capital of &quot;Rio Grande do Sul&quot; State, was founded in 1772 by Portuguese Azorean. Over the centuries, the city has welcomed several immigrants, particularly Germans, Italians, Spanish, Africans, Poles and Lebanese, with different culture and religions (Catholics, Jews, Protestants and Muslims)."
+msgstr ""
+
+#: \views\pages\city.ctp:6
+msgid "This mosaic of ethnic, religious and linguistic groups make of Porto Alegre, with almost 1.5 million inhabitants, a special cosmopolitan space, where the contrasts and differences are always welcome."
+msgstr ""
+
+#: \views\pages\city.ctp:7
+msgid "This is Porto Alegre, multicultural in nature, a land of great writers, intellectuals, artists and politicians that have marked the history of Brazil. "
+msgstr ""
+
+#: \views\pages\city.ctp:8
+msgid "Gateway for tourists in the &quot;Rio Grande do Sul&quot; State and only 120 miles from the pleasant &quot;Serra Ga&uacute;cha&quot;, Porto Alegre has the high quality infrastructure, hotels, and business services, being the base of large national and international companies."
+msgstr ""
+
+#: \views\pages\city.ctp:9
+msgid "All those qualities make Porto Alegre one of the main destinations for large national and international events in Brazil."
+msgstr ""
+
 #: \views\pages\edit.ctp:34
 msgid "Page Record"
+msgstr ""
+
+#: \views\pages\financial_support.ctp:4
+msgid "Financial Support"
+msgstr ""
+
+#: \views\pages\financial_support.ctp:9
+msgid "Sponsors"
 msgstr ""
 
 #: \views\pages\home.ctp:4
@@ -480,6 +608,7 @@ msgid "The scientific programme was designed to promote fruitful discussions amo
 msgstr ""
 
 #: \views\pages\home.ctp:11;12;13;14;15;16;17;18;19;20
+#: \views\pages\speakers.ctp:9;10;11;12;13;14;15;16;17;18
 msgid "Spain"
 msgstr ""
 
@@ -495,10 +624,6 @@ msgstr ""
 msgid "Login"
 msgstr ""
 
-#: \views\pages\home.ctp:36
-msgid "password"
-msgstr ""
-
 #: \views\pages\home.ctp:42
 msgid "Click here if you forgot your password."
 msgstr ""
@@ -507,11 +632,302 @@ msgstr ""
 msgid "Click here if you're not registered."
 msgstr ""
 
+#: \views\pages\information.ctp:3
+msgid "In this section you can find information about these three topics:"
+msgstr ""
+
+#: \views\pages\information.ctp:10
+msgid "City"
+msgstr ""
+
+#: \views\pages\information.ctp:10
+msgid "Some information about Porto Alegre."
+msgstr ""
+
+#: \views\pages\information.ctp:11
+msgid "Venue Meeting"
+msgstr ""
+
+#: \views\pages\information.ctp:11
+msgid "Information about Sheraton Hotel, where the event will take place."
+msgstr ""
+
+#: \views\pages\information.ctp:12
+msgid "Accomodation"
+msgstr ""
+
+#: \views\pages\information.ctp:12
+msgid "Information about hotels and places to stay in Porto Alegre."
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:3
+msgid "Schedule"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:8
+msgid "Sunday &#150; October 2nd"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:9
+msgid "02:00 PM-04:00PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:9
+msgid "Registration"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:10;24;38;49;63;76
+msgid "04:00 PM-05:00 PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:10
+msgid "Opening Lecture"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:11
+msgid "05:00 PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:11
+msgid "Opening Cocktail"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:15
+msgid "Monday &#150; October 3rd"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:16;30;55;82
+msgid "09:00 AM-10:00 AM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:16
+msgid "Lecture 1"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:17;31;56;83
+msgid "10:00 AM-10:30 AM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:17;22;31;36;47;56;61;74;77;83
+msgid "Discussion"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:18
+msgid "10:30 AM11:00 AM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:18;23;32;37;48;57;62;75;84
+msgid "Coffee break"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:19
+msgid "11:00 AM-12:00 AM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:19
+msgid "Study groups 1"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:20;59;72;86
+msgid "12:00 PM-02:00 PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:20;34;45;59;72;86
+msgid "Lunch"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:21;35;46;60;73
+msgid "02:00 PM-03:00 PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:21
+msgid "Lecture 2"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:22;36;47;61;74
+msgid "03:00 PM-03:30 PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:23;37;48;62;75
+msgid "03:30 PM-04:00 PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:24
+msgid "Poster Session A"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:25;39;50;64
+msgid "05:00 PM-06:00 PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:25;39;50;64
+msgid "Oral Presentation"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:29
+msgid "Tuesday &#150; October 4th"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:30
+msgid "Lecture 3"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:32;57;84
+msgid "10:30 AM-11:00 AM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:33;58;85
+msgid "11:00 AM-12:00 PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:33
+msgid "Study groups 2"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:34
+msgid "12:00 PM-2:00 PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:35
+msgid "Lecture 4"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:38
+msgid "Poster Session B"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:43
+msgid "Wednesday &#150; October 5th"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:44
+msgid "09:00 AM-12:00PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:44
+msgid "Workshop 1"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:45
+msgid "12:00 PM-02:00PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:46
+msgid "Lecture 5"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:49
+msgid "Poster Session C"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:54
+msgid "Thursday &#150; October 6th"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:55
+msgid "Lecture 6"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:58
+msgid "Study groups 3"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:60
+msgid "Lecture 7"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:63
+msgid "Poster Session D"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:65
+msgid "06:00 PM-08:00 PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:65
+msgid "Free"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:66
+msgid "08:00 PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:66
+msgid "Get Together Party"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:70
+msgid "Friday &#150; October 7th"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:71
+msgid "09:00 AM-12:00 PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:71
+msgid "Interactive Discussion"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:73
+msgid "Lecture 8"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:76
+msgid "Lecture 9"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:77
+msgid "05:00 PM-05:30 PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:81
+msgid "Saturday &#150; October 8th"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:82
+msgid "Lecture 10"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:85
+msgid "Study groups 4"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:87
+msgid "02:00 PM-06:00 PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:87
+msgid "Workshop 2"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:88
+msgid "06:00 PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:88
+msgid "Closing Remarks"
+msgstr ""
+
+#: \views\pages\speakers.ctp:3
+msgid "Speakers"
+msgstr ""
+
+#: \views\pages\speakers.ctp:7
+msgid "These are the speakers for this event:"
+msgstr ""
+
 #: \views\pages\view.ctp:76
 msgid "Page Id"
 msgstr ""
 
 #: \views\subpages\add.ctp:27
+msgid "English Subpage"
+msgstr ""
+
+#: \views\subpages\add.ctp:35
+msgid "Portuguese Subpage"
+msgstr ""
+
 #: \views\subpages\edit.ctp:28
 msgid "Subpage Record"
 msgstr ""
@@ -547,6 +963,12 @@ msgstr ""
 #: \views\users\add.ctp:33
 #: \views\users\edit.ctp:34
 msgid "User Record"
+msgstr ""
+
+#: \views\users\forgot.ctp:3
+#: \views\users\login.ctp:3
+#: \views\users\register.ctp:3
+msgid "User registration will begin by June 10th."
 msgstr ""
 
 #: \views\users\view.ctp:42
