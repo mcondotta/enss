@@ -19,9 +19,9 @@
       <?php echo $this->Html->image('logo.png', array('alt' => 'Excitoxicity and Neuroprotection Spring School 2011')); ?>
     </div>
     <div class="grid_4" id="capes">
-      <?php echo $this->Html->image('capes1.png', array('alt' => 'CAPES')); ?>
+      <?php echo $this->Html->image('capes.png', array('alt' => 'CAPES')); ?>
       <?php // echo $this->Html->image('cnpq1.png', array('alt' => 'CNPQ')); ?>
-      <?php echo $this->Html->image('fapergs1.png', array('alt' => 'FAPERGS')); ?>
+      <?php //echo $this->Html->image('fapergs1.png', array('alt' => 'FAPERGS')); ?>
     </div>
     <div class="grid_16">
       </br><h4 style="float: right;"><?php __("Porto Alegre, RS, Brazil, 2nd-8th of October 2011"); ?></h4>
@@ -54,6 +54,9 @@
     <div class="grid_16" style="text-align: center;">
       <?php echo $this->Html->image('lab_sul.png', array('alt' => 'Change language to English')); ?>
       <?php echo $this->Html->image('reboh.png', array('alt' => 'Change language to English')); ?>
+      <?php echo $this->Html->image('bang.jpg', array('alt' => 'Change language to English')); ?>
+      <?php echo $this->Html->image('incten.png', array('alt' => 'Change language to English')); ?>
+      <?php echo $this->Html->image('ufrgs.gif', array('alt' => 'Change language to English')); ?>
     </div>
 		<div class="clear" style="height: 300px; width: 100%;"></div>
 	</div>
