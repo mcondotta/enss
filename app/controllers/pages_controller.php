@@ -2,6 +2,7 @@
 class PagesController extends AppController {
 
   var $name = 'Pages';
+  var $components = array('Email');
 
   function beforeFilter() {
     parent::beforeFilter();
@@ -106,6 +107,35 @@ class PagesController extends AppController {
 
   function contacts() {
     $this->set('title_for_layout',__('ENSS - Contacts', true));
+    if(isset($this->data)) {
+      debug($this->data);
+      $name = $this->data['Contact']['First Name'] . ' ' . $this->data['Contact']['Last Name'];
+      $from = $this->data['Contact']['email'];
+      $subject = 'Contato do Site';
+      $msg = $this->data['Contact']['msg'];
+
+      $this->Email->sendAs = 'both'; // html, text, both
+      $this->set('conteudo', $msg); // especifica variavel da mensagem para o template
+      $this->Email->layout = 'contact'; // views/elements/email/html/contact.ctp
+      $this->Email->template = 'contact';
+
+      // set view variables as normal
+      $this->set('from', $name);
+      $this->set('msg', $msg);
+
+      $this->Email->to = 'celoband@gmail.com';
+      $this->Email->subject = $subject;
+      $this->Email->replyTo = '';
+      $this->Email->from = $name . '<' . $from .'>';
+
+      if ( $this->Email->send($msg) ) {
+        $this->Session->setFlash('E-mail enviado');
+      } else {
+        $this->Session->setFlash('E-mail nao enviado');
+      }
+      $this->redirect('/');
+    }
+
   }
 
   function organizing_committee() {

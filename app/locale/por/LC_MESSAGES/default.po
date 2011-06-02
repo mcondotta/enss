@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "POT-Creation-Date: 2011-06-01 18:20-0300\n"
-"PO-Revision-Date: 2011-06-02 16:23-0300\n"
+"PO-Revision-Date: 2011-06-02 17:38-0300\n"
 "Last-Translator: Marcelo Condotta <celoband@gmail.com>\n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -652,11 +652,11 @@ msgstr "URL"
 
 #: \views\pages\home.ctp:43
 msgid "Click here if you forgot your password."
-msgstr "Clique aqui se voc&ecirc; esqueceu sua senha."
+msgstr "Clique aqui se você esqueceu sua senha."
 
 #: \views\pages\home.ctp:47
 msgid "Click here if you're not registered."
-msgstr "Clique aqui se voc&ecirc; ainda n&atilde;o est&aacute; registrado."
+msgstr "Clique aqui se você ainda não está cadastrado."
 
 #: \views\pages\information.ctp:3
 msgid "In this section you can find information about these three topics:"
@@ -680,7 +680,7 @@ msgstr "Informa&ccedil;&otilde;es sobre o Hotel Sheraton, onde o evento ocorrer&
 
 #: \views\pages\information.ctp:12
 msgid "Accomodation"
-msgstr "Acomoda&ccedil;&otilde;es"
+msgstr "Acomodações"
 
 #: \views\pages\information.ctp:12
 msgid "Information about hotels and places to stay in Porto Alegre."
