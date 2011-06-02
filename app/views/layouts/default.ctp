@@ -52,6 +52,7 @@
 
 		<div class="grid_16" ></br></br></div>
     <div class="grid_16" style="text-align: center;">
+      <h2><?php __('Sponsors'); ?></h2>
       <?php echo $this->Html->image('lab_sul.png', array('alt' => 'Change language to English')); ?>
       <?php echo $this->Html->image('reboh.png', array('alt' => 'Change language to English')); ?>
       <?php echo $this->Html->image('bang.jpg', array('alt' => 'Change language to English')); ?>

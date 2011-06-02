@@ -6,6 +6,7 @@ class PagesController extends AppController {
   function beforeFilter() {
     parent::beforeFilter();
     $this->Page->locale = 'eng';
+    //$this->loadModel('Contact');
   }
 
   function index() {

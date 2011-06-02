@@ -23,7 +23,7 @@
 <?php __('Gisele Hansel, PhD student - PGP in Biological Sciences - Biochemistry - UFRGS'); ?></br>
 <?php __('Roberto Farina de Almeida, Master student - PGP in Biological Sciences - Biochemistry - UFRGS'); ?></br>
 <?php __('Clarissa Branco Haas, Master student - PGP in Biological Sciences - Biochemistry - UFRGS'); ?></br>
-<?php __('Jussânia de Almeida Gnoatto, Master student - PGP in Biological Sciences - Biochemistry - UFRGS'); ?></br>
+<?php __('Juss&acirc;nia de Almeida Gnoatto, Master student - PGP in Biological Sciences - Biochemistry - UFRGS'); ?></br>
 <?php __('Denise Barbosa Ramos, Master student - - PGP in Biological Sciences - Biochemistry - UFRGS '); ?></br>
 <?php __('D&eacute;bora Guerini de Souza, Master student - PGP in Biological Sciences - Biochemistry - UFRGS'); ?></br>
 <?php __('Eduardo Rigon Zimmer, Master student - PGP in Biological Sciences - Biochemistry - UFRGS'); ?></br>

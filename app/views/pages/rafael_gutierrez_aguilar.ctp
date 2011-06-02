@@ -1,5 +1,13 @@
-<div class="grid_16">
 </br></br>
-<h1 style="text-align:center;"><?php __("Comming soon."); ?></h1>
-</br></br>
+<div class="grid_3"></br></div>
+<div class="grid_4">
+<?php echo $this->Html->image('rafael_gutierrez_aguilar.png', array('alt' => 'Rafael Gutierrez Aguilar')); ?>
 </div>
+<div class="grid_8">
+<h1>Rafael Guti&eacute;rrez Aguilar</h1>
+<h2><?php __('Center of Investigation and advanced studies of the National Polytechnic Institute , M&eacute;xico, DF'); ?></h2>
+<h3><?php __('Department of Pharmacobiology'); ?></h3>
+</br>
+<p id="welc_text"><?php __('Research expertise: synaptic plasticity, pre-synaptic modulation and epileptogenesis. Study of the phenotype of glutatamegic /gabargic cells through molecular biology, eletrophicuioliogu and imocncitoquemistry in granule cells of hippocampus.'); ?></p>
+</div>
+</br></br>

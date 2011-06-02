@@ -21,7 +21,7 @@ class AppController extends Controller {
         $this->loadModel('Subpage');
         $this->Page->locale = $this->Session->read('Config.language');
         $this->Subpage->locale = $this->Session->read('Config.language');
-        $pages = $this->Page->find('all', array('order' => 'Page.id ASC'));
+        $pages = $this->Page->find('all', array('order' => array('Page.id ASC', 'I18n__name.foreign_key ASC')));
         $subpages = $this->Subpage->find('all', array('order' => 'Subpage.id ASC'));
         #debug($pages);
         #debug($subpages);

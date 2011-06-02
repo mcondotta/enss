@@ -9,5 +9,5 @@
 <p id="welc_text"><?php __('All those qualities make Porto Alegre one of the main destinations for large national and international events in Brazil.'); ?></p>
 </div>
 <div class="grid_9">
-      <?php echo $this->Html->image('port_map1.png', array('alt' => 'Change language to English')); ?>
+      <?php echo $this->Html->image('port_map.png', array('alt' => 'Change language to English')); ?>
 </div>

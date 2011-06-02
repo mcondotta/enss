@@ -1,5 +1,9 @@
 <div class="grid_16">
 </br></br>
-<h1 style="text-align:center;"><?php __("Comming soon."); ?></h1>
+<?php
+    echo $form->create('Contact');
+    echo $form->inputs();
+    echo $form->end('Send');
+?>
 </br></br>
 </div>
