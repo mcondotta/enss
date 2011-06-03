@@ -108,14 +108,14 @@ class PagesController extends AppController {
   function contacts() {
     $this->set('title_for_layout',__('ENSS - Contacts', true));
     if(isset($this->data)) {
-      debug($this->data);
-      $name = $this->data['Contact']['First Name'] . ' ' . $this->data['Contact']['Last Name'];
+      //$this->Email->delivery = 'debug';
+      $name = $this->data['Contact']['first_name'] . ' ' . $this->data['Contact']['last_name'];
       $from = $this->data['Contact']['email'];
-      $subject = 'Contato do Site';
-      $msg = $this->data['Contact']['msg'];
+      $subject = 'Contato do Site do ENSS';
+      $msg = $this->data['Contact']['message'];
 
       $this->Email->sendAs = 'both'; // html, text, both
-      $this->set('conteudo', $msg); // especifica variavel da mensagem para o template
+      $this->set('content_for_layout', $msg); // especifica variavel da mensagem para o template
       $this->Email->layout = 'contact'; // views/elements/email/html/contact.ctp
       $this->Email->template = 'contact';
 
@@ -123,15 +123,15 @@ class PagesController extends AppController {
       $this->set('from', $name);
       $this->set('msg', $msg);
 
-      $this->Email->to = 'celoband@gmail.com';
+      $this->Email->to = 'enss2011@gmail.com';
       $this->Email->subject = $subject;
-      $this->Email->replyTo = '';
+      $this->Email->replyTo = $from;
       $this->Email->from = $name . '<' . $from .'>';
 
       if ( $this->Email->send($msg) ) {
-        $this->Session->setFlash('E-mail enviado');
+        $this->Session->setFlash(__('E-mail sent.', true));
       } else {
-        $this->Session->setFlash('E-mail nao enviado');
+        $this->Session->setFlash(__('E-mail not sent.', true));
       }
       $this->redirect('/');
     }

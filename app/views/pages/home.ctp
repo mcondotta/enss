@@ -26,18 +26,18 @@
 </div>
 <div class="grid_6">
 <div class="blue_box">
+<h2 style="text-align:center; color:#fff;">Login</h2>
 <?php
 $session->flash('auth');
 echo $form->create('User', array('action' => 'login'));
 ?>
 		<fieldset>
-      <legend><?php printf(__('Login', true)); ?></legend>
 <?php
 echo $form->input('email', array('size' => 15));
 echo $form->input('password', array('size' => 31));
+echo $form->end('Login');
 ?>
 		</fieldset>
-<?php echo $form->end('Login'); ?>
 </br>
 <?php
 echo $html->link(__('Click here if you forgot your password.', true), array('controller'=>'users', 'action'=>'forgot'));

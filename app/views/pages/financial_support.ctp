@@ -8,5 +8,4 @@
       <?php echo $this->Html->image('cnpq.gif', array('alt' => 'FAPERGS')); ?>
 
 </br></br></br>
-<h1 style="text-align:center;"><?php __("Sponsors"); ?></h1>
 </div>

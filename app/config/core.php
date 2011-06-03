@@ -302,3 +302,4 @@
  */
 	Cache::config('default', array('engine' => 'File'));
   Configure::write('Config.language', 'eng');
+  Configure::write('GoogleMapsAPIKey', '---KEY---');

@@ -46,13 +46,16 @@
 
 		<div class="clear" style="height: 10px; width: 100%;"></div>
 
-  	<div class="grid_16"><?php echo $this->Session->flash(); ?></div>
+    <div class="grid_16">
+      <?php echo $this->Session->flash(); ?>
+      <?php // echo $this->Session->flash('email'); ?>
+    </div>
 
   	<?php echo $content_for_layout; ?>
 
 		<div class="grid_16" ></br></br></div>
     <div class="grid_16" style="text-align: center;">
-      <h2><?php __('Sponsors'); ?></h2>
+      <h1><?php __('Sponsors'); ?></h1>
       <?php echo $this->Html->image('lab_sul.png', array('alt' => 'Change language to English')); ?>
       <?php echo $this->Html->image('reboh.png', array('alt' => 'Change language to English')); ?>
       <?php echo $this->Html->image('bang.jpg', array('alt' => 'Change language to English')); ?>
@@ -61,6 +64,6 @@
     </div>
 		<div class="clear" style="height: 300px; width: 100%;"></div>
 	</div>
-	<?php #echo $this->element('sql_dump'); ?>
+	<?php // echo $this->element('sql_dump'); ?>
 </body>
 </html>

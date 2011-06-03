@@ -2,7 +2,7 @@
 App::import('Sanitize');
 class AppController extends Controller {
     var $components = array('Auth', 'Session', 'Cookie');
-    var $helpers = array('Html', 'Form', 'Session', 'MenuBuilder.MenuBuilder');
+    var $helpers = array('Html', 'Form', 'Session', 'MenuBuilder.MenuBuilder','GoogleStaticMap');
 
     function beforeFilter() {
         //Configure AuthComponent

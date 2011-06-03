@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2011-06-01 18:20-0300\n"
+"POT-Creation-Date: 2011-06-03 11:06-0300\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -38,103 +38,111 @@ msgstr ""
 msgid "Event was not deleted"
 msgstr ""
 
-#: \controllers\pages_controller.php:18;43
+#: \controllers\pages_controller.php:20;45
 msgid "Invalid page"
 msgstr ""
 
-#: \controllers\pages_controller.php:31;48
+#: \controllers\pages_controller.php:33;50
 msgid "The page has been saved"
 msgstr ""
 
-#: \controllers\pages_controller.php:34;51
+#: \controllers\pages_controller.php:36;53
 msgid "The page could not be saved. Please, try again."
 msgstr ""
 
-#: \controllers\pages_controller.php:63
+#: \controllers\pages_controller.php:65
 msgid "Invalid id for page"
 msgstr ""
 
-#: \controllers\pages_controller.php:67
+#: \controllers\pages_controller.php:69
 msgid "Page deleted"
 msgstr ""
 
-#: \controllers\pages_controller.php:70
+#: \controllers\pages_controller.php:72
 msgid "Page was not deleted"
 msgstr ""
 
-#: \controllers\pages_controller.php:79
+#: \controllers\pages_controller.php:81
 msgid "ENSS - Information"
 msgstr ""
 
-#: \controllers\pages_controller.php:83
+#: \controllers\pages_controller.php:85
 msgid "ENSS - City"
 msgstr ""
 
-#: \controllers\pages_controller.php:87
+#: \controllers\pages_controller.php:89
 msgid "ENSS - Accomodation"
 msgstr ""
 
-#: \controllers\pages_controller.php:91
+#: \controllers\pages_controller.php:93
 msgid "ENSS - Venue Meeting"
 msgstr ""
 
-#: \controllers\pages_controller.php:95
+#: \controllers\pages_controller.php:97
 msgid "ENSS - Speakers"
 msgstr ""
 
-#: \controllers\pages_controller.php:99
+#: \controllers\pages_controller.php:101
 msgid "ENSS - Scientific Programme"
 msgstr ""
 
-#: \controllers\pages_controller.php:103
+#: \controllers\pages_controller.php:105
 msgid "ENSS - Financial Support"
 msgstr ""
 
-#: \controllers\pages_controller.php:107
+#: \controllers\pages_controller.php:109
 msgid "ENSS - Contacts"
 msgstr ""
 
-#: \controllers\pages_controller.php:111
+#: \controllers\pages_controller.php:132
+msgid "E-mail sent."
+msgstr ""
+
+#: \controllers\pages_controller.php:134
+msgid "E-mail not sent."
+msgstr ""
+
+#: \controllers\pages_controller.php:142
 msgid "ENSS - Organizing Committee"
 msgstr ""
 
-#: \controllers\pages_controller.php:115
+#: \controllers\pages_controller.php:146
 msgid "ENSS - Francisco Ciruela"
 msgstr ""
 
-#: \controllers\pages_controller.php:119
+#: \controllers\pages_controller.php:150
 msgid "ENSS - Helmut Kettenmann"
 msgstr ""
 
-#: \controllers\pages_controller.php:123
+#: \controllers\pages_controller.php:154
 msgid "ENSS - James W. Simpkins"
 msgstr ""
 
-#: \controllers\pages_controller.php:127
+#: \controllers\pages_controller.php:158
 msgid "ENSS - Jeffrey Rothstein"
 msgstr ""
 
-#: \controllers\pages_controller.php:131
+#: \controllers\pages_controller.php:162
 msgid "ENSS - Michael Robinson"
 msgstr ""
 
-#: \controllers\pages_controller.php:135
+#: \controllers\pages_controller.php:166
 msgid "ENSS - Nicolas G. Bazan"
 msgstr ""
 
-#: \controllers\pages_controller.php:139
+#: \controllers\pages_controller.php:170
 msgid "ENSS - Rafael Guti&#233;rrez Aguilar"
 msgstr ""
 
-#: \controllers\pages_controller.php:143
+#: \controllers\pages_controller.php:174
 msgid "ENSS - Renata Ciccarelli"
 msgstr ""
 
-#: \controllers\pages_controller.php:147
+#: \controllers\pages_controller.php:178
 msgid "ENSS - Ros&#225;lia Mendez-Otero"
 msgstr ""
 
-#: \controllers\pages_controller.php:151
+#: \controllers\pages_controller.php:182
 msgid "ENSS - Vladimir Parpura"
 msgstr ""
 
@@ -508,14 +516,11 @@ msgstr ""
 msgid "Language selector"
 msgstr ""
 
-#: \views\layouts\default.ctp:55
-#: \views\pages\financial_support.ctp:11
+#: \views\layouts\default.ctp:58
 msgid "Sponsors"
 msgstr ""
 
 #: \views\pages\accomodation.ctp:3
-#: \views\pages\contacts.ctp:3
-#: \views\pages\venue_meeting.ctp:3
 msgid "Comming soon."
 msgstr ""
 
@@ -567,6 +572,28 @@ msgstr ""
 
 #: \views\pages\city.ctp:9
 msgid "All those qualities make Porto Alegre one of the main destinations for large national and international events in Brazil."
+msgstr ""
+
+#: \views\pages\contacts.ctp:4
+msgid "Contact"
+msgstr ""
+
+#: \views\pages\contacts.ctp:8
+#: \views\users\view.ctp:150
+msgid "First Name"
+msgstr ""
+
+#: \views\pages\contacts.ctp:9
+#: \views\users\view.ctp:151
+msgid "Last Name"
+msgstr ""
+
+#: \views\pages\contacts.ctp:11
+msgid "Message"
+msgstr ""
+
+#: \views\pages\contacts.ctp:12
+msgid "Send"
 msgstr ""
 
 #: \views\pages\edit.ctp:34
@@ -1118,6 +1145,26 @@ msgstr ""
 msgid "These are the speakers for this event:"
 msgstr ""
 
+#: \views\pages\venue_meeting.ctp:3
+msgid "Sheraton Hotel"
+msgstr ""
+
+#: \views\pages\venue_meeting.ctp:7
+msgid "Hotel Location"
+msgstr ""
+
+#: \views\pages\venue_meeting.ctp:17
+msgid "Facade of the Sheraton Hotel."
+msgstr ""
+
+#: \views\pages\venue_meeting.ctp:18
+msgid "Meeting room of the Sheraton Hotel."
+msgstr ""
+
+#: \views\pages\venue_meeting.ctp:21
+msgid "The Excitotoxicity and Neuroprotection Spring School will be held in the Sheraton Porto Alegre Hotel. Sheraton Hotel is located in the exclusive, upscale neighborhood of Moinhos de Vento and just 15-minute drive from Salgado Filho International Airport, with easy accessibility to many sightseeing and in the heart of the city. The  Moinhos Shopping Center - with over 100 smart boutiques, fashionable shops, 15 restaurants, and four cinemas - is an integral part of  hotel. The Sheraton Hotel is next to \"Cal&ccedil;ada (kalssada) da Fama\", a street famous for its sophisticated gourmet restaurants and trendy bars."
+msgstr ""
+
 #: \views\pages\view.ctp:76
 msgid "Page Id"
 msgstr ""
@@ -1227,14 +1274,6 @@ msgstr ""
 
 #: \views\users\view.ctp:82
 msgid "Modified"
-msgstr ""
-
-#: \views\users\view.ctp:150
-msgid "First Name"
-msgstr ""
-
-#: \views\users\view.ctp:151
-msgid "Last Name"
 msgstr ""
 
 #: \views\users\view.ctp:152
