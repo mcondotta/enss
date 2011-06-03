@@ -1,5 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-br" xml:lang="pt-br">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<?php echo $this->Html->charset(); ?>
 	<title><?php echo $title_for_layout; ?></title>
@@ -23,9 +23,7 @@
       <?php // echo $this->Html->image('cnpq1.png', array('alt' => 'CNPQ')); ?>
       <?php //echo $this->Html->image('fapergs1.png', array('alt' => 'FAPERGS')); ?>
     </div>
-    <div class="grid_16">
-      </br><h4 style="float: right;"><?php __("Porto Alegre, RS, Brazil, 2nd-8th of October 2011"); ?></h4>
-    </div>
+    <div class="grid_16"><h4 style="float: right;"><p><?php __("Porto Alegre, RS, Brazil, 2<SUP>nd</SUP>-8<sup>th</sup> of October 2011"); ?></p></h4></div>
     <div class="clear"></div>
     <div class="grid_16" id="menubar">
       <?php echo $menuBuilder->build('main-menu'); ?>
