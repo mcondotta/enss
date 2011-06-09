@@ -6,8 +6,8 @@ class PagesController extends AppController {
 
   function beforeFilter() {
     parent::beforeFilter();
+    $this->Auth->deny('admin');
     $this->Page->locale = 'eng';
-    //$this->loadModel('Contact');
   }
 
   function index() {
@@ -181,5 +181,14 @@ class PagesController extends AppController {
   function vladimir_parpura() {
     $this->set('title_for_layout',__('ENSS - Vladimir Parpura', true));
   }
+
+  function news() {
+    $this->set('title_for_layout',__('ENSS - News', true));
+  }
+
+  function admin() {
+    $this->set('title_for_layout',__('ENSS - Admin', true));
+  }
+
 }
 ?>

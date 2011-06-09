@@ -8,15 +8,21 @@ class AppController extends Controller {
         //Configure AuthComponent
         Security::setHash('sha256');
         $this->Auth->allow('*');
+        $this->Auth->deny('index', 'view', 'add', 'edit', 'delete');
+        $this->Auth->fields = array('username' => 'email', 'password' => 'password');
         #$this->Auth->authorize = array('index', 'actions');
         $this->Auth->authError = 'Area Restrita! Efetue login!';
         $this->Auth->loginError = 'Nome de usuario ou senha não conferem!';
-        $this->Auth->userScope = array('User.active' => true);
+        $this->Auth->userScope = array('User.status' => true);
         $this->Auth->loginAction = array('controller' => 'users', 'action' => 'login');
-        #$this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'logout');
-        #$this->Auth->loginRedirect = array('controller' => 'posts', 'action' => 'add');
+        $this->Auth->logoutRedirect = array('controller' => 'pages', 'action' => 'home');
+        $this->Auth->loginRedirect = array('controller' => 'pages', 'action' => 'home');
         $this->set('admin', $this->_isAdmin());
         $this->_setLanguage();
+        $this->set('logged', FALSE);
+        if ($this->Auth->user()) {
+          $this->set('logged', TRUE);
+        }
         $this->loadModel('Page');
         $this->loadModel('Subpage');
         $this->Page->locale = $this->Session->read('Config.language');

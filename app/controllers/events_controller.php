@@ -3,7 +3,11 @@ class EventsController extends AppController {
 
 	var $name = 'Events';
 
-	function index() {
+  function beforeFilter() {
+    parent::beforeFilter();
+  }
+
+function index() {
 		$this->Event->recursive = 0;
 		$this->set('events', $this->paginate());
 	}

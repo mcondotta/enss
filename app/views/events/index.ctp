@@ -1,30 +1,19 @@
-<div class="grid_4">	
-	<div class="box">			
-				<h2>
-			<a href="#" id="toggle-admin-actions">Actions</a>
-		</h2>
-		<div class="block" id="admin-actions">			
-			<h5>Events</h5>
-			<ul class="menu">
-				<li><?php echo $this->Html->link(sprintf(__('New %s', true), __('Event', true)), array('action' => 'add')); ?></li>
-			</ul>
-			
-			<h5>Abstracts</h5>
-			<ul class="menu">
-				<li><?php echo $this->Html->link(sprintf(__('List %s', true), __('Abstracts', true)), array('controller' => 'abstracts', 'action' => 'index')); ?> </li>
-				<li><?php echo $this->Html->link(sprintf(__('New %s', true), __('Abstract', true)), array('controller' => 'abstracts', 'action' => 'add')); ?> </li>
-			</ul>
-
-			<h5>Pages</h5>
-			<ul class="menu">
-				<li><?php echo $this->Html->link(sprintf(__('List %s', true), __('Pages', true)), array('controller' => 'pages', 'action' => 'index')); ?> </li>
-				<li><?php echo $this->Html->link(sprintf(__('New %s', true), __('Page', true)), array('controller' => 'pages', 'action' => 'add')); ?> </li>
-			</ul>
-		</div>
-	</div>
+<div class="grid_16"><h1 style="text-align:center;">Administra&ccedil;&atilde;o</h1></div>
+<div class="grid_6"></br></div>
+<div class="grid_4">
+    <table>
+      <tr><td>
+        <h3 style="text-align:center;">
+<?php echo $html->link(__('Events', true), array('controller'=>'events', 'action'=>'index')); ?> =>
+<?php echo $html->link(__('New Event', true), array('controller'=>'events', 'action'=>'add')); ?></h3>       </td></tr>
+      <tr><td><h3 style="text-align:center;"><?php echo $html->link(__('Users', true), array('controller'=>'users', 'action'=>'index')); ?></h3></td></tr>
+      <tr><td><h3 style="text-align:center;"><?php echo $html->link(__('Pages', true), array('controller'=>'pages', 'action'=>'index')); ?></h3></td></tr>
+      <tr><td><h3 style="text-align:center;"><?php echo $html->link(__('Subpages', true), array('controller'=>'subpages', 'action'=>'index')); ?></h3></td></tr>
+    </table>
 </div>
+<div class="grid_6"></br></div>
 
-<div class="grid_12">
+<div class="grid_16">
     <h2 id="page-heading"><?php __('Events');?></h2>
 	
 		

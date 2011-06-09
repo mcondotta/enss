@@ -14,8 +14,8 @@
 				
 			<h5>Abstracts</h5>
 			<ul class="menu">
-				<li><?php echo $this->Html->link(sprintf(__('List %s', true), __('Abstracts', true)), array('controller' => 'abstracts', 'action' => 'index')); ?> </li>
-				<li><?php echo $this->Html->link(sprintf(__('New %s', true), __('Abstract', true)), array('controller' => 'abstracts', 'action' => 'add')); ?> </li>
+				<li><?php echo $this->Html->link(sprintf(__('List %s', true), __('Abstracts', true)), array('controller' => 'abstract_ils', 'action' => 'index')); ?> </li>
+				<li><?php echo $this->Html->link(sprintf(__('New %s', true), __('Abstract', true)), array('controller' => 'abstract_ils', 'action' => 'add')); ?> </li>
 			</ul>
 
 			<h5>Personal Informations</h5>

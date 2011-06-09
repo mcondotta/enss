@@ -103,9 +103,17 @@ fieldset
   text-align: justify;
 }
 
-#spk_list {
-  font-size: 15px;
+#welc_text1 {
+  font-size: 17px;
+  font-weight:bold;
   vertical-align: center;
+  text-align: justify;
+}
+
+.spk_list {
+  display: table-cell;
+  font-size: 15px;
+  vertical-align: middle;
 }
 
 .org {

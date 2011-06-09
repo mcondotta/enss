@@ -5,12 +5,10 @@
 </div>
 <div class="grid_8">
 <h1>Vladimir Parpura</h1>
-<h2><?php __('University of Alabama'); ?></h2>
-<h3><?php __('Associate Professor of Neurobiology Department'); ?></h3>
+<h2><?php __('University of Alabama (USA)'); ?></h2>
 <h3><?php __('Center of Glial Biology in Medicine'); ?></h3>
-<h3><?php __('Brain Institute Evelyn F. McKnight'); ?></h3>
 </br>
-<p id="welc_text"><?php __('Research expertise: mechanisms involves in glutamate release by astrocytes.'); ?></p>
+<p id="welc_text"><?php __('Research expertise: mechanisms involved in glutamate release by astrocytes.'); ?></p>
 </div>
 </br></br>
 
