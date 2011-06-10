@@ -1,14 +1,16 @@
-<div class="grid_16"><h1 style="text-align:center;">Administra&ccedil;&atilde;o</h1></div>
-<div class="grid_6"></br></div>
-<div class="grid_4">
-    <table>
-      <tr><td class="actions"><h3 style="text-align:center;"><?php echo $html->link(__('Events', true), array('controller'=>'events', 'action'=>'index')); ?></h3></td></tr>
-      <tr><td class="actions"><h3 style="text-align:center;"><?php echo $html->link(__('Users', true), array('controller'=>'users', 'action'=>'index')); ?></h3></td></tr>
-      <tr><td><h3 style="text-align:center;"><?php echo $html->link(__('Pages', true), array('controller'=>'pages', 'action'=>'index')); ?></h3></td></tr>
-      <tr><td><h3 style="text-align:center;"><?php echo $html->link(__('Subpages', true), array('controller'=>'subpages', 'action'=>'index')); ?></h3></td></tr>
-    </table>
+<div class="grid_16" id="admin_menu">
+    <h1 style="text-align:center;color:yellow;">Administra&ccedil;&atilde;o</h1>
+    <div>
+    <ul id="admin-menu">
+        <li class="has-sub-menu"><h3 style="text-align:center;"><?php echo $html->link(__('Events', true), array('controller'=>'events', 'action'=>'index')); ?></h3>
+          <ul><li class="first-item"><?php echo $html->link(__('Add New Event', true), array('controller'=>'events', 'action'=>'add')); ?></li></ul>
+        </li>
+        <li><h3 style="text-align:center;"><?php echo $html->link(__('Users', true), array('controller'=>'users', 'action'=>'index')); ?></h3></li>
+        <li><h3 style="text-align:center;"><?php echo $html->link(__('Pages', true), array('controller'=>'pages', 'action'=>'index')); ?></h3></li>
+        <li><h3 style="text-align:center;"><?php echo $html->link(htmlentities(__('Subpages', true)), array('controller'=>'subpages', 'action'=>'index')); ?></h3></li>
+    </ul>
+    </div>
 </div>
-<div class="grid_6"></br></div>
 <div class="grid_16">
     <h2 id="page-heading"><?php __('Users');?></h2>
 	<table cellpadding="0" cellspacing="0">

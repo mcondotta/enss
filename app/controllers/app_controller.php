@@ -12,7 +12,7 @@ class AppController extends Controller {
         $this->Auth->fields = array('username' => 'email', 'password' => 'password');
         #$this->Auth->authorize = array('index', 'actions');
         $this->Auth->authError = 'Area Restrita! Efetue login!';
-        $this->Auth->loginError = 'Nome de usuario ou senha não conferem!';
+        $this->Auth->loginError = 'Nome de usuario ou senha no conferem!';
         $this->Auth->userScope = array('User.status' => true);
         $this->Auth->loginAction = array('controller' => 'users', 'action' => 'login');
         $this->Auth->logoutRedirect = array('controller' => 'pages', 'action' => 'home');

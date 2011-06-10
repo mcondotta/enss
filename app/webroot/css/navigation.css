@@ -1,7 +1,7 @@
 /*------------------------------------*\
 	NAV
 \*------------------------------------*/
-#main-menu{
+#admin-menu{
 	float:left;
   position:middle;
 	width:85%;
@@ -9,19 +9,25 @@
 	font-weight:bold;
   margin-top:5px;
 	margin-bottom:3px;
-  background:#488E48;
+  background:#2c539e;
+  text-align:center;
 }
-#main-menu li{
+#admin-menu li{
 	float:left;
 	margin-right:10px;
 	position:relative;
 	display:block;
+  margin-left: auto;
+  margin-right: auto;
+
 }
-#main-menu li a{
+#admin-menu li a{
 	display:block;
+  margin-left: auto;
+  margin-right: auto;
 	padding:5px;
 	color:#FFFF66;
-	/* background:#000099; */
+	/* background:#488E48; */
 	text-decoration:none;
 
 	text-shadow:1px 1px 1px rgba(0,0,0,0.75); /* Text shadow to lift it a little */
@@ -29,9 +35,9 @@
 	-webkit-border-radius:2px;
 	border-radius:2px;
 }
-#main-menu li a:hover{
+#admin-menu li a:hover{
 	color:#fff;
-	background:#000099; /* Solid colour fall-back */
+	background:#488E48; /* Solid colour fall-back */
 	background:rgba(72,142,72,0.75); /* It'll look nice semi-transparent */
 
 	-moz-transform:scale(1.05);
@@ -39,37 +45,42 @@
 }
 
 /*--- DROPDOWN ---*/
-#main-menu ul{
-	list-style:none;
-	position:absolute;
-	left:-9999px; /* Hide off-screen when not needed (this is more accessible than display:none;) */
-	opacity:0; /* Set initial state to transparent */
-	-webkit-transition:0.25s linear opacity; /* Make the dropdown fade-in in Webkit */
+#admin-menu ul{
+  display:none;
+  position:absolute;
+  left:0;
+  top:100%;
+  padding:0 10px 10px;
+  background-color:#488E48;
+  border-radius:6px;
+  -moz-border-radius:6px;
+  -webkit-border-radius:6px;
+
 }
-#main-menu ul li{
+#admin-menu ul li{
 	padding-top:1px; /* Introducing a padding between the li and the a give the illusion spaced items */
 
 	float:none;
 }
-#main-menu ul a{
+#admin-menu ul a{
 	white-space:nowrap; /* Stop text wrapping and creating multi-line dropdown items */
 	display:block;
 }
-#main-menu li:hover ul{ /* Display the dropdown on hover */
+#admin-menu li:hover ul{ /* Display the dropdown on hover */
 	left:0; /* Bring back on-screen when needed */
 	opacity:1; /* Fade to opaque */
 }
-#main-menu li:hover a{ /* Set styles for top level when dropdown is hovered */
+#admin-menu li:hover a{ /* Set styles for top level when dropdown is hovered */
 
-	background:#000099; /* Solid colour fall-back */
-	background:rgba(0,0,154,0.75); /* It'll look nice semi-transparent */
+	background:#488E48; /* Solid colour fall-back */
+	background:rgba(72,142,72,0.75); /* It'll look nice semi-transparent */
 }
-#main-menu li:hover ul a{ /* Override some top level styles when dropdown is hovered */
+#admin-menu li:hover ul a{ /* Override some top level styles when dropdown is hovered */
 	text-decoration:none;
 	-webkit-transition:-webkit-transform 0.075s linear;
 }
-#main-menu li:hover ul li a:hover{ /* Set styles for dropdown when items are hovered */
-	background:#000099; /* Solid colour fall-back */
+#admin-menu li:hover ul li a:hover{ /* Set styles for dropdown when items are hovered */
+	background:#488E48; /* Solid colour fall-back */
 
 	background:rgba(72,142,72,0.75); /* It'll look nice semi-transparent */
 	-moz-transform:scale(1.05);

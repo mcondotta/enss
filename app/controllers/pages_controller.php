@@ -187,6 +187,10 @@ class PagesController extends AppController {
   }
 
   function admin() {
+    if ($this->Auth->user('role') != 'admin') {
+      $this->Session->setFlash(__('Only administrator can access this page.', true));
+      $this->redirect(array('controller' => 'pages', 'action'=>'home'));
+    }
     $this->set('title_for_layout',__('ENSS - Admin', true));
   }
 
