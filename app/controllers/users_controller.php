@@ -44,7 +44,7 @@ class UsersController extends AppController {
           $this->data['PersonalInformation']['user_id'] = $this->User->id;
           if (!$this->User->PersonalInformation->save($this->data)) {
             $this->User->delete($this->User->id);
-            $this->Session->setFlash(__('User not registered!'));
+            $this->Session->setFlash(__('User not registered!', true));
             $this->redirect('add');
           }
           $this->data['AbstractIl']['user_id'] = $this->User->id;
@@ -56,7 +56,7 @@ class UsersController extends AppController {
             $this->redirect('add');
           }
         }
-        $this->Session->setFlash(__('User successfully registered!'));
+        $this->Session->setFlash(__('User successfully registered!', true));
         $this->redirect(array('controller' => 'pages', 'action' => 'home'));
       }
     }
@@ -78,7 +78,7 @@ class UsersController extends AppController {
     }
 	}
 
-function edit($id = null) {
+  function edit($id = null) {
 		if (!$id && empty($this->data)) {
 			$this->Session->setFlash(__('Invalid user', true));
 			$this->redirect(array('action' => 'index'));
@@ -124,8 +124,17 @@ function edit($id = null) {
   }
 
   function logout() {
-    $this->Session->setFlash(__('You are now logged out'));
+    $this->Session->setFlash(__('You are now logged out', true));
     $this->redirect($this->Auth->logout());
+  }
+
+  function informations() {
+    $id = $this->User->id;
+    if (!$id) {
+			$this->Session->setFlash(__('Invalid user', true));
+			$this->redirect(array('action' => 'index'));
+		}
+		$this->set('user', $this->User->read(null, $id));	
   }
 }
 ?>

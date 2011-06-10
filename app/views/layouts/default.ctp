@@ -47,6 +47,7 @@
 		<div class="clear" style="height: 10px; width: 100%;"></div>
 
     <div class="grid_16">
+<?php //echo $this->Session; ?>
       <?php echo $this->Session->flash(); ?>
       <?php // echo $this->Session->flash('email'); ?>
     </div>

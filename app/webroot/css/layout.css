@@ -546,8 +546,10 @@ div#flashMessage {
 	padding: 10px;
 	margin: 0px 13px 10px 11px;
 	border: 1px dashed #888;
-	background: #eee;
-	font-size: 14px;
+	background: #2c539e;
+	font-size: 20px;
+  text-align: center;
+	color: #FFFF66;	
 }
 div.flash-error {
 	color: #bf0000;
@@ -555,13 +557,13 @@ div.flash-error {
 	border-color: #bf0000 !important;
 }
 div.flash-warning {
-	color: #725600;	
+	color: #FFFF66;	
 	background: #ffffbf !important;
 	border-color: #bfbf00 !important;
 }
 div.flash-success {
-	color: #00bf00;
-	background: #dfffbf !important;
+	color: #FFFF66;
+	background: #2c539e !important;
 	border-color: #00bf00 !important;
 }
 div.error-message {

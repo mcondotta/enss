@@ -8,7 +8,7 @@ class AppController extends Controller {
         //Configure AuthComponent
         Security::setHash('sha256');
         $this->Auth->allow('*');
-        $this->Auth->deny('index', 'view', 'add', 'edit', 'delete');
+        $this->Auth->deny('index', 'view', 'add', 'edit', 'delete', 'admin_add', 'informations');
         $this->Auth->fields = array('username' => 'email', 'password' => 'password');
         #$this->Auth->authorize = array('index', 'actions');
         $this->Auth->authError = 'Area Restrita! Efetue login!';
