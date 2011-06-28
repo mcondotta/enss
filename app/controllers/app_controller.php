@@ -28,7 +28,7 @@ class AppController extends Controller {
         $this->Page->locale = $this->Session->read('Config.language');
         $this->Subpage->locale = $this->Session->read('Config.language');
         $pages = $this->Page->find('all', array('order' => array('Page.id ASC', 'I18n__name.foreign_key ASC')));
-        $subpages = $this->Subpage->find('all', array('order' => 'Subpage.id ASC'));
+        #$subpages = $this->Subpage->find('all', array('order' => 'Subpage.name ASC'));
         #debug($pages);
         #debug($subpages);
         $menu = array('main-menu' => array());
@@ -47,7 +47,12 @@ class AppController extends Controller {
           #debug($page['Page']);
           if (!empty($page['Subpage'])) {
             $menu_entry['submenu'] = array();
-            foreach ($page['Subpage'] as $subpage) {
+            $subpages = $page['Subpage'];
+            if ($page['Page']['name'] == 'Speakers' || $page['Page']['name'] == 'Palestrantes') {
+              $subpages = Set::sort($page['Subpage'], '{n}.name', 'asc');
+            }
+            #debug($subpages);
+            foreach ($subpages as $subpage) {
               $loc_subpage = $this->Subpage->find('all', array ('conditions' => array('Subpage.id' => $subpage['id'])));
               $subpage = $loc_subpage[0]['Subpage'];
               #debug($loc_subpage);

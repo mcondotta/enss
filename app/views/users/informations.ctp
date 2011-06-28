@@ -6,31 +6,31 @@
       <table>
         <tr>
         <td><?php __('Last Name'); ?></td>
-        <td><?php echo $user['PersonalInformation'][0]['last_name']; ?>&nbsp;</td>
+        <td><?php echo $user['PersonalInformation']['last_name']; ?>&nbsp;</td>
         </tr>
         <tr>
         <td><?php __('First Name'); ?></td>
-        <td><?php echo $user['PersonalInformation'][0]['first_name']; ?>&nbsp;</td>
+        <td><?php echo $user['PersonalInformation']['first_name']; ?>&nbsp;</td>
         </tr>
         <tr>
         <td><?php __('Scientific Name'); ?></td>
-        <td><?php echo $user['PersonalInformation'][0]['scientific_name']; ?>&nbsp;</td>
+        <td><?php echo $user['PersonalInformation']['scientific_name']; ?>&nbsp;</td>
         </tr>
         <tr>
         <td><?php __('Current Position'); ?></td>
-        <td><?php echo $user['PersonalInformation'][0]['current_position']; ?>&nbsp;</td>
+        <td><?php echo $user['PersonalInformation']['current_position']; ?>&nbsp;</td>
         </tr>
         <tr>
         <td><?php __('University'); ?></td>
-        <td><?php echo $user['PersonalInformation'][0]['university']; ?>&nbsp;</td>
+        <td><?php echo $user['PersonalInformation']['university']; ?>&nbsp;</td>
         </tr>
         <tr>
         <td><?php __('Department'); ?></td>
-        <td><?php echo $user['PersonalInformation'][0]['department']; ?>&nbsp;</td>
+        <td><?php echo $user['PersonalInformation']['department']; ?>&nbsp;</td>
         </tr>
         <tr>
         <td><?php __('Professor'); ?></td>
-        <td><?php echo $user['PersonalInformation'][0]['professor']; ?>&nbsp;</td>
+        <td><?php echo $user['PersonalInformation']['professor']; ?>&nbsp;</td>
         </tr>
         <tr>
         <td><?php __('CPF'); ?></td>
@@ -42,15 +42,15 @@
         </tr>
         <tr>
         <td><?php __('City/State'); ?></td>
-        <td><?php echo $user['PersonalInformation'][0]['city_state']; ?>&nbsp;</td>
+        <td><?php echo $user['PersonalInformation']['city_state']; ?>&nbsp;</td>
         </tr>
         <tr>
         <td><?php __('Address'); ?></td>
-        <td><?php echo $user['PersonalInformation'][0]['address']; ?>&nbsp;</td>
+        <td><?php echo $user['PersonalInformation']['address']; ?>&nbsp;</td>
         </tr>
         <tr>
         <td><?php __('Lattes'); ?></td>
-        <td><?php echo $user['PersonalInformation'][0]['lattes']; ?>&nbsp;</td>
+        <td><?php echo $user['PersonalInformation']['lattes']; ?>&nbsp;</td>
         </tr>
         <tr>
         <td><?php __('Last Login'); ?></td>
@@ -70,11 +70,11 @@
         </tr>
         <tr>
         <td><?php __('Abstract'); ?></td>
-        <td><p><?php echo nl2br(htmlspecialchars($user['AbstractIl'][0]['abstract'])); ?></p>&nbsp;</td>
+        <td><p><?php echo nl2br(htmlspecialchars($user['AbstractIl']['abstract'])); ?></p>&nbsp;</td>
         </tr>
         <tr>
         <td><?php __('Intention Letter'); ?></td>
-        <td><p><?php echo nl2br(htmlspecialchars($user['AbstractIl'][0]['intention_letter'])); ?></p>&nbsp;</td>
+        <td><p><?php echo nl2br(htmlspecialchars($user['AbstractIl']['intention_letter'])); ?></p>&nbsp;</td>
         </tr>
 			</table>
 </div>

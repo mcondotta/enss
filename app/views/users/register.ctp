@@ -54,14 +54,14 @@ Ser&atilde;o aceitos somente os resumos redigidos em ingl&ecirc;s. O resumo deve
 <b>Methods and Results:</b> Este item deve conter um breve resumo dos materiais e m&eacute;todos utilizados e dos resultados obtidos. N&atilde;o se esque&ccedil;a de mencionar o tamanho da amostra. Quando os experimentos forem realizados em humanos, devem ser acompanhados de aprova&ccedil;&atilde;o do Comit&ecirc; de &Eacute;tica Experimental da Institui&ccedil;&atilde;o.</br></br>
 <b>Conclusion:</b> Deve estar necessariamente embasada nos resultados apresentados.</br></br>
 <b>Financial support:</b> O apoio financeiro deve ser mencionado na &uacute;ltima linha.</br></br>
-O resumo deve ter o texto OBRIGATORIAMENTE REDIGIDO EM INGL&Ecirc;S e formatado conforme modelo acima contendo o n&uacute;mero m&aacute;ximo de 3000 caracteres (contando espa&ccedil;os) utilizando fonte Arial 12, espa&ccedil;amento simples e par&aacute;grafo justificado.</br></br>
+O resumo deve ter o texto OBRIGATORIAMENTE REDIGIDO EM INGL&Ecirc;S e formatado conforme modelo acima contendo o n&uacute;mero m&aacute;ximo de, excluindo título, institui&ccedil;&atild;o, autores e o suporte financeiro, 3000 caracteres (contando espa&ccedil;os) utilizando fonte Arial 12, espa&ccedil;amento simples e par&aacute;grafo justificado.</br></br>
 Observe que o t&iacute;tulo do resumo deve ser todo em letras mai&uacute;sculas, seguido pelo nome dos autores, identifica&ccedil;&atilde;o do Departamento, Institui&ccedil;&atilde;o e Estado onde o trabalho foi realizado. Padronize o seu nome e sobrenome em todos os resumos em que voc&ecirc; for autor ou co-autor.</br>
 O material a ser apresentado no p&ocirc;ster durante a ENSS deve ser substancialmente semelhante &agrave;quele descrito no resumo. Em particular, o t&iacute;tulo, autores e conte&uacute;do cient&iacute;fico devem ser id&ecirc;nticos aos do resumo aprovado.
 
 </p>
 <fieldset>
 <?php
- 		echo $this->Form->input('AbstractIl.abstract', array('label' => 'Resumo: 3000 caracteres', 'type' => 'textarea', 'maxLength' => 3000, 'rows' => '30', 'cols' => '80'));
+ 		echo $this->Form->input('AbstractIl.abstract', array('label' => 'Resumo:', 'type' => 'textarea', 'maxLength' => 3500, 'rows' => '30', 'cols' => '80'));
 		echo $this->Form->input('AbstractIl.intention_letter', array('label' => 'Carta de Inten&ccedil;&atilde;o', 'type' => 'textarea', 'rows' => '5', 'cols' => '80'));
 
 ?>

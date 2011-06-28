@@ -68,17 +68,29 @@ class UsersController extends AppController {
 			$this->Session->setFlash(__('Invalid user', true));
 			$this->redirect(array('action' => 'index'));
 		}
-		if (!empty($this->data)) {
-			if ($this->User->save($this->data)) {
-				$this->Session->setFlash(__('The user has been saved', true));
-				$this->redirect(array('action' => 'index'));
-			} else {
-				$this->Session->setFlash(__('The user could not be saved. Please, try again.', true));
-			}
-		}
-		if (empty($this->data)) {
-			$this->data = $this->User->read(null, $id);
-		}
+    if (!empty($this->data)) {
+      $user = $this->User->save($this->data);
+      if ($user) {
+        $this->User->PersonalInformation->delete();
+        if (!$this->User->PersonalInformation->save($this->data)) {
+          $this->Session->setFlash(__('Changes not saved!', true));
+          $this->redirect('edit_info');
+        }
+        $this->User->AbstractIl->delete();
+        if (!$this->User->AbstractIl->save($this->data)) {
+          $this->Session->setFlash(__('Changes not saved!', true));
+          $this->redirect('edit_info');
+        }
+        $this->Session->setFlash(__('The changes have been saved', true));
+        $this->redirect(array('action' => 'index'));
+      } else {
+          $this->Session->setFlash(__('The user could not be saved. Please, try again.', true));
+      }
+    }
+    if (empty($this->data)) {
+      $this->data = $this->User->findById($id);
+    }
+    $this->set('title_for_layout',__('ENSS - Edit User Information', true));
 	}
 
 	function delete($id = null) {
@@ -170,15 +182,12 @@ class UsersController extends AppController {
     if (!empty($this->data)) {
       $user = $this->User->save($this->data);
 			if ($user) {
-        $this->data['PersonalInformation'] = $this->data['PersonalInformation'][0];
-        $this->data['PersonalInformation']['user_id'] = $this->User->id;
+        $this->User->PersonalInformation->delete();
         if (!$this->User->PersonalInformation->save($this->data)) {
           $this->Session->setFlash(__('Changes not saved!', true));
           $this->redirect('edit_info');
         }
-        $this->data['AbstractIl'] = $this->data['AbstractIl'][0];
-        $this->data['AbstractIl']['user_id'] = $this->User->id;
-        $this->data['AbstractIl']['event_id'] = 1;
+        $this->User->AbstractIl->delete();
         if (!$this->User->AbstractIl->save($this->data)) {
           $this->Session->setFlash(__('Changes not saved!', true));
           $this->redirect('edit_info');
@@ -186,11 +195,11 @@ class UsersController extends AppController {
 				$this->Session->setFlash(__('The changes have been saved', true));
 				$this->redirect(array('action' => 'informations'));
 			} else {
-				$this->Session->setFlash(__('The user could not be saved. Please, try again.', true));
+          $this->Session->setFlash(__('The user could not be saved. Please, try again.', true));
 			}
 		}
 		if (empty($this->data)) {
-			$this->data = $this->User->read(null, $this->Auth->user('id'));
+			$this->data = $this->User->findById($this->Auth->user('id'));
 		}
     $this->set('title_for_layout',__('ENSS - Edit User Information', true));
   }
