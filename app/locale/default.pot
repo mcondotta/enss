@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2011-06-28 14:01-0300\n"
+"POT-Creation-Date: 2011-07-21 12:11-0300\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -62,20 +62,32 @@ msgstr ""
 msgid "Event was not deleted"
 msgstr ""
 
-#: \controllers\pages_controller.php:20;45
-msgid "Invalid page"
-msgstr ""
-
+#: \controllers\new_infos_controller.php:32;49
 #: \controllers\pages_controller.php:33;50
 msgid "The page has been saved"
 msgstr ""
 
+#: \controllers\new_infos_controller.php:35;52
 #: \controllers\pages_controller.php:36;53
 msgid "The page could not be saved. Please, try again."
 msgstr ""
 
+#: \controllers\new_infos_controller.php:44
+#: \controllers\pages_controller.php:20;45
+msgid "Invalid page"
+msgstr ""
+
+#: \controllers\new_infos_controller.php:64
 #: \controllers\pages_controller.php:65
 msgid "Invalid id for page"
+msgstr ""
+
+#: \controllers\new_infos_controller.php:68
+msgid "News deleted"
+msgstr ""
+
+#: \controllers\new_infos_controller.php:71
+msgid "News was not deleted"
 msgstr ""
 
 #: \controllers\pages_controller.php:69
@@ -343,6 +355,8 @@ msgstr ""
 #: \views\events\edit.ctp:10
 #: \views\events\index.ctp:7;17
 #: \views\events\view.ctp:11
+#: \views\new_infos\add.ctp:5
+#: \views\new_infos\news_list.ctp:5
 #: \views\pages\add.ctp:14
 #: \views\pages\admin.ctp:5
 #: \views\pages\edit.ctp:15
@@ -395,13 +409,15 @@ msgstr ""
 #: \views\abstract_ils\index.ctp:20
 #: \views\abstract_ils\view.ctp:23
 #: \views\events\index.ctp:9
+#: \views\new_infos\add.ctp:8
+#: \views\new_infos\news_list.ctp:8
 #: \views\pages\admin.ctp:8
 #: \views\personal_informations\add.ctp:14
 #: \views\personal_informations\edit.ctp:15
 #: \views\personal_informations\index.ctp:14
 #: \views\personal_informations\view.ctp:17
 #: \views\users\edit.ctp:8
-#: \views\users\index.ctp:8;15
+#: \views\users\index.ctp:8;16
 #: \views\users\view.ctp:8
 msgid "Users"
 msgstr ""
@@ -414,14 +430,17 @@ msgstr ""
 #: \views\personal_informations\edit.ctp:16
 #: \views\personal_informations\index.ctp:15
 #: \views\personal_informations\view.ctp:18;71
+#: \views\users\add1.ctp:2
 msgid "User"
 msgstr ""
 
 #: \views\abstract_ils\add.ctp:28
 #: \views\events\add.ctp:28
+#: \views\new_infos\add.ctp:17
 #: \views\pages\add.ctp:28
 #: \views\personal_informations\add.ctp:22
 #: \views\subpages\add.ctp:22
+#: \views\users\add1.ctp:2
 msgid "Add %s"
 msgstr ""
 
@@ -433,7 +452,7 @@ msgstr ""
 #: \views\events\edit.ctp:16
 #: \views\events\view.ctp:18;99
 #: \views\users\informations.ctp:72
-#: \views\users\view.ctp:84
+#: \views\users\view.ctp:85
 msgid "Abstract"
 msgstr ""
 
@@ -446,13 +465,15 @@ msgstr ""
 #: \views\abstract_ils\edit.ctp:44
 #: \views\events\add.ctp:38
 #: \views\events\edit.ctp:40
+#: \views\new_infos\add.ctp:36
 #: \views\pages\add.ctp:47
 #: \views\pages\edit.ctp:42
 #: \views\personal_informations\add.ctp:41
 #: \views\personal_informations\edit.ctp:43
 #: \views\subpages\add.ctp:41
 #: \views\subpages\edit.ctp:36
-#: \views\users\edit.ctp:50
+#: \views\users\add1.ctp:34
+#: \views\users\edit.ctp:51
 #: \views\users\edit_info.ctp:37
 msgid "Submit"
 msgstr ""
@@ -462,6 +483,7 @@ msgstr ""
 #: \views\events\edit.ctp:9
 #: \views\events\index.ctp:38
 #: \views\events\view.ctp:90;132
+#: \views\new_infos\news_list.ctp:40
 #: \views\pages\edit.ctp:9
 #: \views\pages\index.ctp:53
 #: \views\pages\view.ctp:96
@@ -469,7 +491,7 @@ msgstr ""
 #: \views\personal_informations\index.ctp:54
 #: \views\subpages\edit.ctp:9
 #: \views\subpages\index.ctp:47
-#: \views\users\index.ctp:40
+#: \views\users\index.ctp:41
 msgid "Delete"
 msgstr ""
 
@@ -479,6 +501,7 @@ msgstr ""
 #: \views\events\edit.ctp:9
 #: \views\events\index.ctp:38
 #: \views\events\view.ctp:10;90;132
+#: \views\new_infos\news_list.ctp:40
 #: \views\pages\edit.ctp:9
 #: \views\pages\index.ctp:53
 #: \views\pages\view.ctp:10;96
@@ -488,7 +511,7 @@ msgstr ""
 #: \views\subpages\edit.ctp:9
 #: \views\subpages\index.ctp:47
 #: \views\subpages\view.ctp:10
-#: \views\users\index.ctp:40
+#: \views\users\index.ctp:41
 msgid "Are you sure you want to delete # %s?"
 msgstr ""
 
@@ -508,11 +531,12 @@ msgstr ""
 #: \views\abstract_ils\index.ctp:32
 #: \views\events\index.ctp:21
 #: \views\events\view.ctp:69;113
+#: \views\new_infos\news_list.ctp:22
 #: \views\pages\index.ctp:32
 #: \views\pages\view.ctp:77
 #: \views\personal_informations\index.ctp:26
 #: \views\subpages\index.ctp:26
-#: \views\users\index.ctp:17
+#: \views\users\index.ctp:18
 msgid "Actions"
 msgstr ""
 
@@ -523,45 +547,52 @@ msgstr ""
 #: \views\pages\view.ctp:94
 #: \views\personal_informations\index.ctp:52
 #: \views\subpages\index.ctp:45
-#: \views\users\index.ctp:38
+#: \views\users\index.ctp:39
 msgid "View"
 msgstr ""
 
 #: \views\abstract_ils\index.ctp:56
 #: \views\events\index.ctp:37
 #: \views\events\view.ctp:89;131
+#: \views\new_infos\news_list.ctp:39
 #: \views\pages\index.ctp:52
 #: \views\pages\view.ctp:95
 #: \views\personal_informations\index.ctp:53
 #: \views\subpages\index.ctp:46
-#: \views\users\index.ctp:39
+#: \views\users\index.ctp:40
 msgid "Edit"
 msgstr ""
 
 #: \views\abstract_ils\index.ctp:67
 #: \views\events\index.ctp:48
+#: \views\new_infos\index.ctp:21
+#: \views\new_infos\news_list.ctp:50
 #: \views\pages\index.ctp:63
 #: \views\personal_informations\index.ctp:64
 #: \views\subpages\index.ctp:57
-#: \views\users\index.ctp:50
+#: \views\users\index.ctp:51
 msgid "Page %page% of %pages%, showing %current% records out of %count% total, starting on record %start%, ending on %end%"
 msgstr ""
 
 #: \views\abstract_ils\index.ctp:72
 #: \views\events\index.ctp:53
+#: \views\new_infos\index.ctp:26
+#: \views\new_infos\news_list.ctp:55
 #: \views\pages\index.ctp:68
 #: \views\personal_informations\index.ctp:69
 #: \views\subpages\index.ctp:62
-#: \views\users\index.ctp:55
+#: \views\users\index.ctp:56
 msgid "previous"
 msgstr ""
 
 #: \views\abstract_ils\index.ctp:75
 #: \views\events\index.ctp:56
+#: \views\new_infos\index.ctp:29
+#: \views\new_infos\news_list.ctp:58
 #: \views\pages\index.ctp:71
 #: \views\personal_informations\index.ctp:72
 #: \views\subpages\index.ctp:65
-#: \views\users\index.ctp:58
+#: \views\users\index.ctp:59
 msgid "next"
 msgstr ""
 
@@ -588,7 +619,7 @@ msgstr ""
 
 #: \views\abstract_ils\view.ctp:62
 #: \views\users\informations.ctp:76
-#: \views\users\view.ctp:88
+#: \views\users\view.ctp:89
 msgid "Intention Letter"
 msgstr ""
 
@@ -604,6 +635,8 @@ msgstr ""
 #: \views\events\edit.ctp:21
 #: \views\events\index.ctp:10
 #: \views\events\view.ctp:23;104
+#: \views\new_infos\add.ctp:9
+#: \views\new_infos\news_list.ctp:9
 #: \views\pages\add.ctp:9
 #: \views\pages\admin.ctp:9
 #: \views\pages\edit.ctp:10
@@ -643,6 +676,8 @@ msgid "New Event"
 msgstr ""
 
 #: \views\events\index.ctp:11
+#: \views\new_infos\add.ctp:10
+#: \views\new_infos\news_list.ctp:10
 #: \views\pages\add.ctp:20
 #: \views\pages\admin.ctp:10
 #: \views\pages\edit.ctp:21
@@ -712,8 +747,39 @@ msgstr ""
 msgid "Sponsors"
 msgstr ""
 
+#: \views\new_infos\add.ctp:6
+#: \views\new_infos\news_list.ctp:6
+#: \views\pages\admin.ctp:6
+#: \views\users\edit.ctp:6
+#: \views\users\index.ctp:6
+#: \views\users\view.ctp:6
+msgid "Add New Event"
+msgstr ""
+
+#: \views\new_infos\add.ctp:11;17
+#: \views\new_infos\index.ctp:3
+#: \views\new_infos\news_list.ctp:11;18
+#: \views\pages\news.ctp:3
+#: \views\users\edit.ctp:11
+#: \views\users\index.ctp:11
+#: \views\users\view.ctp:11
+msgid "News"
+msgstr ""
+
+#: \views\new_infos\add.ctp:22
+msgid "English News"
+msgstr ""
+
+#: \views\new_infos\add.ctp:30
+msgid "Portuguese News"
+msgstr ""
+
+#: \views\new_infos\news_list.ctp:19
+msgid "Add news"
+msgstr ""
+
 #: \views\pages\accomodation.ctp:3
-msgid "Comming soon."
+msgid "Accomodations"
 msgstr ""
 
 #: \views\pages\add.ctp:21
@@ -733,13 +799,6 @@ msgstr ""
 
 #: \views\pages\add.ctp:41
 msgid "Portuguese Page"
-msgstr ""
-
-#: \views\pages\admin.ctp:6
-#: \views\users\edit.ctp:6
-#: \views\users\index.ctp:6
-#: \views\users\view.ctp:6
-msgid "Add New Event"
 msgstr ""
 
 #: \views\pages\city.ctp:5
@@ -769,14 +828,14 @@ msgstr ""
 #: \views\pages\contacts.ctp:11
 #: \views\personal_informations\view.ctp:36
 #: \views\users\informations.ctp:12
-#: \views\users\view.ctp:24
+#: \views\users\view.ctp:25
 msgid "First Name"
 msgstr ""
 
 #: \views\pages\contacts.ctp:12
 #: \views\personal_informations\view.ctp:41
 #: \views\users\informations.ctp:8
-#: \views\users\view.ctp:20
+#: \views\users\view.ctp:21
 msgid "Last Name"
 msgstr ""
 
@@ -820,74 +879,78 @@ msgstr ""
 msgid "Research expertise: role of astrocytes on the processing of informations; microglial responses after brain injury; cellular functional properties of gliomas."
 msgstr ""
 
-#: \views\pages\home.ctp:3
-msgid "Welcome to ENSS"
+#: \views\pages\home.ctp:1
+msgid "The Abstract Registration was extended untill July 22th."
 msgstr ""
 
 #: \views\pages\home.ctp:4
-msgid "Dear Students,"
+msgid "Welcome to ENSS"
 msgstr ""
 
 #: \views\pages\home.ctp:5
-msgid "It is a great pleasure to announce that the first Excitotoxicity and Neuroprotection Spring School (ENSS) will be held in Porto Alegre, RS, Brazil, from October 2nd to 8th, 2011."
+msgid "Dear Students,"
 msgstr ""
 
 #: \views\pages\home.ctp:6
-msgid "This school is an initiative of CAPES to promote international exchange, academic cooperation and innovative interaction among outstanding scientists, Brazilian graduate students and Postdoctoral fellows."
+msgid "It is a great pleasure to announce that the first Excitotoxicity and Neuroprotection Spring School (ENSS) will be held in Porto Alegre, RS, Brazil, from October 2nd to 8th, 2011."
 msgstr ""
 
 #: \views\pages\home.ctp:7
-msgid "The scientific programme was designed to promote fruitful discussions among the participants focusing in Brain diseases and Neuroprotection."
+msgid "This school is an initiative of CAPES to promote international exchange, academic cooperation and innovative interaction among outstanding scientists, Brazilian graduate students and Postdoctoral fellows."
 msgstr ""
 
 #: \views\pages\home.ctp:8
-msgid "Very best regards,"
+msgid "The scientific programme was designed to promote fruitful discussions among the participants focusing in Brain diseases and Neuroprotection."
 msgstr ""
 
 #: \views\pages\home.ctp:9
+msgid "Very best regards,"
+msgstr ""
+
+#: \views\pages\home.ctp:10
 msgid "ENSS Organizers"
 msgstr ""
 
-#: \views\pages\home.ctp:12
+#: \views\pages\home.ctp:13
 #: \views\pages\speakers.ctp:7
 msgid "The following outstanding neuroscientists will participate:"
 msgstr ""
 
-#: \views\pages\home.ctp:15;21;22;23;24
+#: \views\pages\home.ctp:16;22;23;24;25
 #: \views\pages\speakers.ctp:9;15;16;17;18
 msgid "United States of America"
 msgstr ""
 
-#: \views\pages\home.ctp:16
+#: \views\pages\home.ctp:17
 #: \views\pages\speakers.ctp:10
 msgid "Italy"
 msgstr ""
 
-#: \views\pages\home.ctp:17
+#: \views\pages\home.ctp:18
 #: \views\pages\speakers.ctp:11
 msgid "Spain"
 msgstr ""
 
-#: \views\pages\home.ctp:18
+#: \views\pages\home.ctp:19
 #: \views\pages\speakers.ctp:12
 msgid "Mexico"
 msgstr ""
 
-#: \views\pages\home.ctp:19
+#: \views\pages\home.ctp:20
 #: \views\pages\speakers.ctp:13
 msgid "Germany"
 msgstr ""
 
-#: \views\pages\home.ctp:20
+#: \views\pages\home.ctp:21
 #: \views\pages\speakers.ctp:14
 msgid "Brazil"
 msgstr ""
 
-#: \views\pages\home.ctp:46
+#: \views\pages\home.ctp:47
 msgid "Click here if you forgot your password."
 msgstr ""
 
-#: \views\pages\home.ctp:48
+#: \views\pages\home.ctp:49
 msgid "Click here if you're not registered."
 msgstr ""
 
@@ -955,10 +1018,6 @@ msgstr ""
 msgid "Research expertise: Signaling pathways involved in regulation of glutamate transporters and the putative relation with acute brain injury. Development of new strategies addressed to control brain damage caused by glutamate excitotoxicity."
 msgstr ""
 
-#: \views\pages\news.ctp:3
-msgid "News"
-msgstr ""
-
 #: \views\pages\news.ctp:10
 msgid "June 10th"
 msgstr ""
@@ -1020,23 +1079,23 @@ msgid "J&uacute;lia Dubois Moreira, PhD"
 msgstr ""
 
 #: \views\pages\organizing_committee.ctp:16
-msgid "Pablo Pandolfo, PhD"
-msgstr ""
-
-#: \views\pages\organizing_committee.ctp:17
 msgid "Andr&eacute; Quincozes dos Santos, PhD"
 msgstr ""
 
-#: \views\pages\organizing_committee.ctp:21
+#: \views\pages\organizing_committee.ctp:20
 msgid "Paulo Henrique Botton, PhD student"
 msgstr ""
 
+#: \views\pages\organizing_committee.ctp:21
+msgid "Gisele Hansel, PhD student"
+msgstr ""
+
 #: \views\pages\organizing_committee.ctp:22
-msgid "Victor Hermes Cereser Junior, PhD student"
+msgid "Sabrina Mioranzza, PhD student"
 msgstr ""
 
 #: \views\pages\organizing_committee.ctp:23
-msgid "Gisele Hansel, PhD student"
+msgid "Ana Paula Ardais, PhD student"
 msgstr ""
 
 #: \views\pages\organizing_committee.ctp:24
@@ -1115,7 +1174,7 @@ msgstr ""
 msgid "Registration"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:10;30;50;66;86;102
+#: \views\pages\scientific_programme.ctp:10;30;50;66;86;108
 msgid "04:00 PM-05:00 PM"
 msgstr ""
 
@@ -1135,7 +1194,7 @@ msgstr ""
 msgid "Monday &#150; October 3rd"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:16;36;72;111
+#: \views\pages\scientific_programme.ctp:16;36;72;94
 msgid "09:00 AM-10:00 AM"
 msgstr ""
 
@@ -1151,19 +1210,19 @@ msgstr ""
 msgid "Title: Mechanisms of glutamate release from astrocytes"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:20;40;76;115
+#: \views\pages\scientific_programme.ctp:20;40;76;98
 msgid "10:00 AM-10:30 AM"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:20;28;40;48;64;76;84;100;106;115
+#: \views\pages\scientific_programme.ctp:20;28;40;48;64;76;84;98;106;112
 msgid "Discussion"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:21;41;77;116
+#: \views\pages\scientific_programme.ctp:21;41;77;99
 msgid "10:30 AM-11:00 AM"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:21;29;41;49;65;77;85;101;116
+#: \views\pages\scientific_programme.ctp:21;29;41;49;65;77;85;99;107
 msgid "Coffee break"
 msgstr ""
 
@@ -1175,15 +1234,15 @@ msgstr ""
 msgid "Study groups 1"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:23;79;95;118
+#: \views\pages\scientific_programme.ctp:23;79;101;120
 msgid "12:00 PM-02:00 PM"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:23;43;59;79;95;118
+#: \views\pages\scientific_programme.ctp:23;43;59;79;101;120
 msgid "Lunch"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:24;44;60;80;96
+#: \views\pages\scientific_programme.ctp:24;44;60;80;102
 msgid "02:00 PM-03:00 PM"
 msgstr ""
 
@@ -1199,11 +1258,11 @@ msgstr ""
 msgid "Title: Involvement of astrocytes and purinergic signals in neuroprotection"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:28;48;64;84;100
+#: \views\pages\scientific_programme.ctp:28;48;64;84;106
 msgid "03:00 PM-03:30 PM"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:29;49;65;85;101
+#: \views\pages\scientific_programme.ctp:29;49;65;85;107
 msgid "03:30 PM-04:00 PM"
 msgstr ""
 
@@ -1235,7 +1294,7 @@ msgstr ""
 msgid "Title: Oligodendroglia: Unexpected major contributor to neuronal survival and neurodegeneration"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:42;78;117
+#: \views\pages\scientific_programme.ctp:42;78;100
 msgid "11:00 AM-12:00 PM"
 msgstr ""
 
@@ -1356,23 +1415,19 @@ msgid "Friday &#150; October 7th"
 msgstr ""
 
 #: \views\pages\scientific_programme.ctp:94
-msgid "09:00 AM-12:00 PM"
-msgstr ""
-
-#: \views\pages\scientific_programme.ctp:94
-msgid "Interactive Discussion"
-msgstr ""
-
-#: \views\pages\scientific_programme.ctp:96
 msgid "Lecture 8"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:97
+#: \views\pages\scientific_programme.ctp:95
 msgid "Speaker: Helmut Kettenmann"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:98
+#: \views\pages\scientific_programme.ctp:96
 msgid "Title: Microglia"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:100
+msgid "Study groups 4"
 msgstr ""
 
 #: \views\pages\scientific_programme.ctp:102
@@ -1387,40 +1442,44 @@ msgstr ""
 msgid "Title: Neuronal phenotypic plasticity as a protection mechanism against excitotoxicity"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:106
-msgid "05:00 PM-05:30 PM"
-msgstr ""
-
-#: \views\pages\scientific_programme.ctp:110
-msgid "Saturday &#150; October 8th"
-msgstr ""
-
-#: \views\pages\scientific_programme.ctp:111
+#: \views\pages\scientific_programme.ctp:108
 msgid "Lecture 10"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:112
+#: \views\pages\scientific_programme.ctp:109
 msgid "Speaker: Ros&aacute;lia Mendez-Otero"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:113
+#: \views\pages\scientific_programme.ctp:110
 msgid "Title: Stroke and stem Cell"
 msgstr ""
 
+#: \views\pages\scientific_programme.ctp:112
+msgid "05:00 PM-05:30 PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:116
+msgid "Saturday &#150; October 8th"
+msgstr ""
+
 #: \views\pages\scientific_programme.ctp:117
-msgid "Study groups 4"
+msgid "09:00 AM-12:00 AM"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:119
-msgid "02:00 PM-06:00 PM"
-msgstr ""
-
-#: \views\pages\scientific_programme.ctp:119
+#: \views\pages\scientific_programme.ctp:117
 msgid "Workshop 2"
 msgstr ""
 
-#: \views\pages\scientific_programme.ctp:120
+#: \views\pages\scientific_programme.ctp:118
 msgid "Speakers: Francisco Ciruela, Michael Robinson, Rafael Guti&eacute;rrez, Renata Ciccarelli, Vladmir Parpura"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:121
+msgid "02:00 PM-06:00 PM"
+msgstr ""
+
+#: \views\pages\scientific_programme.ctp:121
+msgid "Interactive Discussion"
 msgstr ""
 
 #: \views\pages\scientific_programme.ctp:122
@@ -1492,7 +1551,7 @@ msgstr ""
 
 #: \views\personal_informations\view.ctp:46
 #: \views\users\informations.ctp:16
-#: \views\users\view.ctp:28
+#: \views\users\view.ctp:29
 msgid "Scientific Name"
 msgstr ""
 
@@ -1502,31 +1561,31 @@ msgstr ""
 
 #: \views\personal_informations\view.ctp:56
 #: \views\users\informations.ctp:24
-#: \views\users\view.ctp:36
+#: \views\users\view.ctp:37
 msgid "University"
 msgstr ""
 
 #: \views\personal_informations\view.ctp:61
 #: \views\users\informations.ctp:28
-#: \views\users\view.ctp:40
+#: \views\users\view.ctp:41
 msgid "Department"
 msgstr ""
 
 #: \views\personal_informations\view.ctp:66
 #: \views\users\informations.ctp:48
-#: \views\users\view.ctp:60
+#: \views\users\view.ctp:61
 msgid "Address"
 msgstr ""
 
 #: \views\personal_informations\view.ctp:76
 #: \views\users\informations.ctp:20
-#: \views\users\view.ctp:32
+#: \views\users\view.ctp:33
 msgid "Current Position"
 msgstr ""
 
 #: \views\personal_informations\view.ctp:81
 #: \views\users\informations.ctp:52
-#: \views\users\view.ctp:64
+#: \views\users\view.ctp:65
 msgid "Lattes"
 msgstr ""
 
@@ -1542,17 +1601,26 @@ msgstr ""
 msgid "Subpage Record"
 msgstr ""
 
-#: \views\users\edit.ctp:17
+#: \views\users\add.ctp:3
+#: \views\users\register1.ctp:3
+msgid "Cadastro de Resumos"
+msgstr ""
+
+#: \views\users\add1.ctp:7
+msgid "User Record"
+msgstr ""
+
+#: \views\users\edit.ctp:18
 #: \views\users\edit_info.ctp:4
 msgid "Edit User Information"
 msgstr ""
 
-#: \views\users\forgot.ctp:5
-msgid "Recover Password"
+#: \views\users\forgot.ctp:3
+msgid "User registration will begin by June 10th."
 msgstr ""
 
 #: \views\users\informations.ctp:4
-#: \views\users\view.ctp:16
+#: \views\users\view.ctp:17
 msgid "User Information"
 msgstr ""
 
@@ -1561,50 +1629,50 @@ msgid "Edit Your Information"
 msgstr ""
 
 #: \views\users\informations.ctp:32
-#: \views\users\view.ctp:44
+#: \views\users\view.ctp:45
 msgid "Professor"
 msgstr ""
 
 #: \views\users\informations.ctp:36
-#: \views\users\view.ctp:48
+#: \views\users\view.ctp:49
 msgid "CPF"
 msgstr ""
 
 #: \views\users\informations.ctp:40
-#: \views\users\view.ctp:52
+#: \views\users\view.ctp:53
 msgid "Email"
 msgstr ""
 
 #: \views\users\informations.ctp:44
-#: \views\users\view.ctp:56
+#: \views\users\view.ctp:57
 msgid "City/State"
 msgstr ""
 
 #: \views\users\informations.ctp:56
-#: \views\users\view.ctp:68
+#: \views\users\view.ctp:69
 msgid "Last Login"
 msgstr ""
 
 #: \views\users\informations.ctp:60
-#: \views\users\view.ctp:72
+#: \views\users\view.ctp:73
 msgid "Last Access"
 msgstr ""
 
 #: \views\users\informations.ctp:64
-#: \views\users\view.ctp:76
+#: \views\users\view.ctp:77
 msgid "Created"
 msgstr ""
 
 #: \views\users\informations.ctp:68
-#: \views\users\view.ctp:80
+#: \views\users\view.ctp:81
 msgid "Modified"
 msgstr ""
 
 #: \views\users\register.ctp:2
-msgid "Cadastro de Resumos"
+msgid "Inscri&ccedil;&atilde;o de Resumos"
 msgstr ""
 
-#: \views\users\view.ctp:17
+#: \views\users\view.ctp:18
 msgid "Edit This Information"
 msgstr ""
 

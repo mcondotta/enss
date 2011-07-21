@@ -72,6 +72,6 @@
     </div>
 		<div class="clear" style="height: 300px; width: 100%;"></div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+	<?php // echo $this->element('sql_dump'); ?>
 </body>
 </html>

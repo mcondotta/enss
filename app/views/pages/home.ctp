@@ -1,4 +1,5 @@
-<div class="clear" style="height: 10px; width: 100%;"></div>
+<div class="grid_16"><h1 style="text-align:center;"><?php __('The Abstract Registration was extended untill July 22th.'); ?></h1></div>
+<div class="clear" style="height: 10px; width: 100%;"></br></div>
 <div class="grid_6">
 <h1 id="welcome"><?php __('Welcome to ENSS'); ?></h1></br>
 <h4><?php __('Dear Students,'); ?></h5></br>

@@ -12,33 +12,32 @@
     </ul>
     </div>
 </div>
-<div class="grid_16">
-    <h2 id="page-heading"><?php __('Users');?></h2>
+<div class="grid_2"></br></div>
+<div class="grid_12">
+<div class="blue_box"  style="width:600px; display: block; margin-left: auto; margin-right: auto;">
+	<h1 style="text-align:center;color:yellow;"><?php  __('News');?></h1>
+  <h2 style="text-align:center;"><?php echo $this->Html->link(__('Add news', true), array('controller' => 'new_infos', 'action' => 'add')); ?></h2>
+</div>
 	<table cellpadding="0" cellspacing="0">
-    <?php $tableHeaders = $html->tableHeaders(array($paginator->sort('id'),$paginator->sort('role'),$paginator->sort('email'),$paginator->sort('status'),$paginator->sort('last_login'),$paginator->sort('last_access'),$paginator->sort('created'),$paginator->sort('modified'),__('Actions', true),));
+    <?php $tableHeaders = $html->tableHeaders(array($paginator->sort('id'),$paginator->sort('event_id'),$paginator->sort('date'),$paginator->sort('text'),__('Actions', true),));
 echo '<thead>'.$tableHeaders.'</thead>'; ?>
 
 <?php
 	$i = 0;
-	foreach ($users as $user):
+	foreach ($new_infos as $new_info):
 		$class = null;
 		if ($i++ % 2 == 0) {
 			$class = ' class="altrow"';
 		}
 	?>
 	<tr<?php echo $class;?>>
-		<td><?php echo $user['User']['id']; ?>&nbsp;</td>
-		<td><?php echo $user['User']['role']; ?>&nbsp;</td>
-		<td><?php echo $user['User']['email']; ?>&nbsp;</td>
-		<td><?php echo $user['User']['status']; ?>&nbsp;</td>
-		<td><?php echo $user['User']['last_login']; ?>&nbsp;</td>
-		<td><?php echo $user['User']['last_access']; ?>&nbsp;</td>
-		<td><?php echo $user['User']['created']; ?>&nbsp;</td>
-		<td><?php echo $user['User']['modified']; ?>&nbsp;</td>
+		<td><?php echo $new_info['NewInfo']['id']; ?>&nbsp;</td>
+		<td><?php echo $new_info['NewInfo']['event_id']; ?>&nbsp;</td>
+		<td><?php echo $new_info['NewInfo']['date']; ?>&nbsp;</td>
+		<td><?php echo $new_info['NewInfo']['text']; ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View', true), array('action' => 'view', $user['User']['id'])); ?>
-			<?php echo ' | ' . $this->Html->link(__('Edit', true), array('action' => 'edit', $user['User']['id'])); ?>
-			<?php echo ' | ' . $this->Html->link(__('Delete', true), array('action' => 'delete', $user['User']['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $user['User']['id'])); ?>
+			<?php echo $this->Html->link(__('Edit', true), array('action' => 'edit', $new_info['NewInfo']['id'])); ?>
+			<?php echo ' | ' . $this->Html->link(__('Delete', true), array('action' => 'delete', $new_info['NewInfo']['id']), null, sprintf(__('Are you sure you want to delete # %s?', true), $new_info['NewInfo']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -60,4 +59,4 @@ echo '<thead>'.$tableHeaders.'</thead>'; ?>
 	</div>
 		
 </div>
-<div class="clear"></div>
+

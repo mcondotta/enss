@@ -13,14 +13,14 @@
 <?php __('Marcelo Ganzella, PhD'); ?></br>
 <?php __('Alexandre Pastoris Muller, PhD'); ?></br>
 <?php __('J&uacute;lia Dubois Moreira, PhD'); ?></br>
-<?php __('Pablo Pandolfo, PhD'); ?></br>
 <?php __('Andr&eacute; Quincozes dos Santos, PhD'); ?></br>
 </p>
 </br>
 <p class="org">
 <?php __('Paulo Henrique Botton, PhD student'); ?></br>
-<?php __('Victor Hermes Cereser Junior, PhD student'); ?></br>
 <?php __('Gisele Hansel, PhD student'); ?></br>
+<?php __('Sabrina Mioranzza, PhD student'); ?></br>
+<?php __('Ana Paula Ardais, PhD student'); ?></br>
 <?php __('Roberto Farina de Almeida, Master student'); ?></br>
 <?php __('Clarissa Branco Haas, Master student'); ?></br>
 <?php __('Juss&acirc;nia de Almeida Gnoatto, Master student'); ?></br>

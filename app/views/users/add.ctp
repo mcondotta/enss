@@ -1,5 +1,7 @@
+<div class="grid_16">
 </br></br>
-<div class="grid_16"><h1 style="text-align:center;"><?php __("Inscri&ccedil;&atilde;o de Resumos"); ?></h1></div>
+<h1 style="text-align:center;"><?php __("Cadastro de Resumos"); ?></h1>
+</div>
 <div class="grid_3"></br></div>
 <div class="grid_10">
   <p id="welc_text">
@@ -9,10 +11,14 @@
 
   <p id="welc_text">Atenciosamente,</br>
   Comiss&atilde;o Organizadora da ENSS 2011</p>
+  </br></br>
+</div>
+<div class="grid_3"></br></div>
 
-<h2 style="text-align:center;">Informa&ccedil;&otilde;es do Usu&aacute;rio</h2>
-    <?php echo $this->Form->create('User', array('action' => 'register'));?>
-    <fieldset style="width:400px; display: block; margin-left: auto; margin-right: auto;">
+<div class="grid_5"></br></div>
+<div class="grid_6">
+	<?php echo $this->Form->create('User', array('action' => 'add'));?>
+		<fieldset>
 		<?php
 		echo $this->Form->input('email');
 		echo $this->Form->input('CPF');
@@ -35,9 +41,16 @@
 		echo $this->Form->input('PersonalInformation.city_state', array('label' => 'Cidade/Estado'));
 		echo $this->Form->input('PersonalInformation.address', array('label' => 'Endere&ccedil;o'));
 		echo $this->Form->input('PersonalInformation.lattes', array('label' => 'C. Lattes (Link)'));
+
+		//echo $this->Form->input('last_login');
+		//echo $this->Form->input('last_access');
 	?>
     </fieldset>
+</div>
+<div class="grid_16"></br></div>
 
+<div class="grid_3"></br></div>
+<div class="grid_10">
 <p><h2 style="text-align:center;">Instru&ccedil;&otilde;es para Resumo</h2></p>
 <p id="welc_text">
 Os resumos submetidos ser&atilde;o apresentados sob a forma de p&ocirc;ster em ingl&ecirc;s. O envio do resumo representa um compromisso definido do(s) autor (es) em apresentar o trabalho, se aceito, durante a ENSS. Todos os resumos ser&atilde;o analisados pela Comiss&atilde;o Organizadora. Compete aos membros da Comiss&atilde;o o direito de avaliar e selecionar os 60 trabalhos a serem apresentados. Resumos submetidos ap&oacute;s o prazo de inscri&ccedil;&atilde;o ou fora dos padr&otilde;es especificados abaixo n&atilde;o ser&atilde;o aceitos. Ser&aacute; permitido somente um resumo por inscri&ccedil;&atilde;o. Os 16 melhores resumos ser&atilde;o selecionados para apresenta&ccedil;&atilde;o oral em ingl&ecirc;s al&eacute;m da apresenta&ccedil;&atilde;o em p&ocirc;ster.
@@ -52,16 +65,15 @@ Ser&atilde;o aceitos somente os resumos redigidos em ingl&ecirc;s. O resumo deve
 <b>Authors/Department:</b> Sobrenome, Iniciais do nome (de todos os autores) Departamento, Universidade, Cidade, Estado.</br></br>
 <b>Introduction/Aim:</b> Devem ser relacionados os fundamentos e os objetivos para execu&ccedil;&atilde;o do trabalho.</br></br>
 <b>Methods and Results:</b> Este item deve conter um breve resumo dos materiais e m&eacute;todos utilizados e dos resultados obtidos. N&atilde;o se esque&ccedil;a de mencionar o tamanho da amostra. Quando os experimentos forem realizados em humanos, devem ser acompanhados de aprova&ccedil;&atilde;o do Comit&ecirc; de &Eacute;tica Experimental da Institui&ccedil;&atilde;o.</br></br>
-<b>Conclusion:</b> Deve estar necessariamente embasada nos resultados apresentados.</br></br>
-<b>Financial support:</b> O apoio financeiro deve ser mencionado na &uacute;ltima linha.</br></br>
-O resumo deve ter o texto OBRIGATORIAMENTE REDIGIDO EM INGL&Ecirc;S e formatado conforme modelo acima contendo o n&uacute;mero m&aacute;ximo de, excluindo título, institui&ccedil;&atild;o, autores e o suporte financeiro, 3000 caracteres (contando espa&ccedil;os) utilizando fonte Arial 12, espa&ccedil;amento simples e par&aacute;grafo justificado.</br></br>
+<b>Conclusion:</b> Deve estar necessariamente embasada nos resultados apresentados. Financial support: O apoio financeiro deve ser mencionado na &uacute;ltima linha.</br></br>
+O resumo deve ter o texto OBRIGATORIAMENTE REDIGIDO EM INGL&Ecirc;S e formatado conforme modelo acima contendo o n&uacute;mero m&aacute;ximo de 3000 caracteres (contando espa&ccedil;os) utilizando fonte Arial 12, espa&ccedil;amento simples e par&aacute;grafo justificado.</br></br>
 Observe que o t&iacute;tulo do resumo deve ser todo em letras mai&uacute;sculas, seguido pelo nome dos autores, identifica&ccedil;&atilde;o do Departamento, Institui&ccedil;&atilde;o e Estado onde o trabalho foi realizado. Padronize o seu nome e sobrenome em todos os resumos em que voc&ecirc; for autor ou co-autor.</br>
 O material a ser apresentado no p&ocirc;ster durante a ENSS deve ser substancialmente semelhante &agrave;quele descrito no resumo. Em particular, o t&iacute;tulo, autores e conte&uacute;do cient&iacute;fico devem ser id&ecirc;nticos aos do resumo aprovado.
 
 </p>
 <fieldset>
 <?php
- 		echo $this->Form->input('AbstractIl.abstract', array('label' => 'Resumo:', 'type' => 'textarea', 'maxLength' => 3500, 'rows' => '30', 'cols' => '80'));
+ 		echo $this->Form->input('AbstractIl.abstract', array('label' => 'Resumo: 3000 caracteres', 'type' => 'textarea', 'maxLength' => 3000, 'rows' => '30', 'cols' => '80'));
 		echo $this->Form->input('AbstractIl.intention_letter', array('label' => 'Carta de Inten&ccedil;&atilde;o', 'type' => 'textarea', 'rows' => '5', 'cols' => '80'));
 
 ?>

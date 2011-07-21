@@ -8,6 +8,7 @@
         <li><h3 style="text-align:center;"><?php echo $html->link(__('Users', true), array('controller'=>'users', 'action'=>'index')); ?></h3></li>
         <li><h3 style="text-align:center;"><?php echo $html->link(__('Pages', true), array('controller'=>'pages', 'action'=>'index')); ?></h3></li>
         <li><h3 style="text-align:center;"><?php echo $html->link(htmlentities(__('Subpages', true)), array('controller'=>'subpages', 'action'=>'index')); ?></h3></li>
+        <li><h3 style="text-align:center;"><?php echo $html->link(htmlentities(__('News', true)), array('controller'=>'new_infos', 'action'=>'news_list')); ?></h3></li>
     </ul>
     </div>
 </div>
